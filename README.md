@@ -17,9 +17,9 @@
 ## Contents
 * **[1. サンプルアプリケーションをTomcatに導入](#1-サンプルアプリケーションをTomcatに導入)**
 
-* **[2. AOT用テンプレートのダウンロード](#Step2-Build-sample-project)**
+* **[2. AOT用テンプレートのダウンロード](#2-AOT用テンプレートのダウンロード)**
    
-* **[3. パッケージングとネイティブビルド](#Step3-Run-the-demo)**
+* **[3. パッケージングとネイティブビルド](#3-パッケージングとネイティブビルド)**
 
 ## 1. サンプルアプリケーションをTomcatに導入
 ```
@@ -57,4 +57,75 @@ Tomcat started.
 [opc@jms-instance-2 bin]$ curl http://localhost:8080/springTomcat/greeting
 Hello Spring Framework World
 [opc@jms-instance-2 bin]$
+```
+
+## 2. AOT用テンプレートのダウンロード
+
+Tomcatの公式ドキュメントhttps://tomcat.apache.org/tomcat-11.0-doc/graal.html に従って、Tomcat Stuffed moduleをダウンロードしてください。
+```
+git clone https://github.com/apache/tomcat.git
+
+cd tomcat/modules/stuffed
+```
+
+Tomcatサーバ配下デプロイ済みのspringTomcatをstuffed配下のwebappsディレクトリにコピーします。
+spring-framework-tomcat-sample/src/main/java配下のJavaソースをstuffed/webappsの配下にコピーします。
+```
+cd spring-framework-tomcat-sample
+cp -r src/main/java/* ../stuffed/webapps/springTomcat/WEB-INF/classes/
+```
+
+Tomcatサーバのconfディレクトリ配下のすべてをstuffed/confディレクトリにコピーします。
+
+
+## 3. パッケージングとネイティブビルド
+stuffed配下のpom.xmlを修正します。
+
+tomcat.versionを実際に使用するTomcatのバージョンに変更します。
+springframeworkのバージョンを追加します。
+
+```
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <mainClass>org.apache.catalina.startup.Tomcat</mainClass>
+    <!--tomcat.version>11.0.0-M14</tomcat.version-->
+    <tomcat.version>10.0.27</tomcat.version>
+    <!--add for springframework-->
+    <spring-framework.version>6.0.2</spring-framework.version>
+</properties>
+```
+
+springframework用のdependencyを追加します。
+```
+<dependencies>
+        <!-- add for springframework -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring-framework.version}</version>
+        </dependency>       
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring-framework.version}</version>
+        </dependency>
+        <!-- add for springframework -->
+.....................
+</dependencies>
+```
+
+mavenでビルドをします。
+```
+cd stuffed
+mvn package
+```
+mavenによるビルドが完了後、Antによりビルドします。
+
+```
+ant -Dwebapp.name=springTomcat -f webapp-jspc.ant.xml
+```
+
+再度mavenでビルドをします。
+```
+mvn package
 ```
