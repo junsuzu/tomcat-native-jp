@@ -15,7 +15,7 @@
 > **NOTE:** 上記ソフトウェアはすべてインストール済みという前提でデモ手順を記載します。
 
 ## Contents
-* **[1. サンプルアプリケーションをTomcatに導入](#Step1-Create-docker-image-with-Java-Enterprise-Performance-Pack)**
+* **[1. サンプルアプリケーションをTomcatに導入](#1. サンプルアプリケーションをTomcatに導入)**
 
 * **[2. AOT用テンプレートのダウンロード](#Step2-Build-sample-project)**
    
