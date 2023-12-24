@@ -129,3 +129,42 @@ ant -Dwebapp.name=springTomcat -f webapp-jspc.ant.xml
 ```
 mvn package
 ```
+
+Tomcatを含むコードを生成するために、以下のコマンドを実行します。
+```
+$JAVA_HOME/bin/java\
+        -Dcatalina.base=. -Djava.util.logging.config.file=conf/logging.properties\
+        -jar target/tomcat-stuffed-1.0.jar --catalina -generateCode src/main/java
+```
+
+再度mavenでビルドをします。
+```
+mvn package
+```
+
+Reflectionを解決するため、以下のagentツールを使用して、メタデータを生成します。
+```
+$JAVA_HOME/bin/java\
+        -agentlib:native-image-agent=config-output-dir=$TOMCAT_STUFFED/target/\
+        -Dorg.graalvm.nativeimage.imagecode=agent\
+        -Dcatalina.base=. -Djava.util.logging.config.file=conf/logging.properties\
+        -jar target/tomcat-stuffed-1.0.jar --catalina -useGeneratedCode
+```
+
+native imageをビルドします。
+```
+native-image --no-server\
+        --allow-incomplete-classpath --enable-https\
+        --initialize-at-build-time=org.eclipse.jdt,org.apache.el.parser.SimpleNode,jakarta.servlet.jsp.JspFactory,org.apache.jasper.servlet.JasperInitializer,org.apache.jasper.runtime.JspFactoryImpl\
+        -H:+JNI -H:+ReportUnsupportedElementsAtRuntime\
+        -H:+ReportExceptionStackTraces -H:EnableURLProtocols=http,https,jar,jrt\
+        -H:ConfigurationFileDirectories=$TOMCAT_STUFFED/target/\
+        -H:ReflectionConfigurationFiles=$TOMCAT_STUFFED/tomcat-reflection.json\
+        -H:ResourceConfigurationFiles=$TOMCAT_STUFFED/tomcat-resource.json\
+        -H:JNIConfigurationFiles=$TOMCAT_STUFFED/tomcat-jni.json\
+        -jar $TOMCAT_STUFFED/target/tomcat-stuffed-1.0.jar
+```
+
+```
+./tomcat-stuffed-1.0 -Dcatalina.base=. -Djava.util.logging.config.file=conf/logging.properties --catalina -useGeneratedCode
+```
