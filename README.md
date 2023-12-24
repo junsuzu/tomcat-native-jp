@@ -23,5 +23,8 @@
 
 ### 1. サンプルアプリケーションをTomcatに導入
 ```
-git clone https://github.com/oracle/docker-images
+git clone https://github.com/junsuzu/tomcat-native-jp
+$ cd spring-framework-tomcat-sample
+$ mvn clean package
+$ cd target
 ```
