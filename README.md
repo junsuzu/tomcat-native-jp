@@ -42,3 +42,19 @@ drwxrwxr-x. 3 opc opc      35 Dec 24 06:09 maven-status
 drwxrwxr-x. 4 opc opc      54 Dec 24 06:09 springTomcat
 -rw-rw-r--. 1 opc opc 4378492 Dec 24 06:09 springTomcat.war
 ```
+springTomcat.warファイルをTomcatサーバのwebappsディレクトリにコピーし、Tomcatサーバ上アプリが正常に稼働することを確認してください。
+
+```
+[opc@jms-instance-2 target]$ cd /opt/apache-tomcat-10.0.27/bin
+[opc@jms-instance-2 bin]$ ./startup.sh
+Using CATALINA_BASE:   /opt/apache-tomcat-10.0.27
+Using CATALINA_HOME:   /opt/apache-tomcat-10.0.27
+Using CATALINA_TMPDIR: /opt/apache-tomcat-10.0.27/temp
+Using JRE_HOME:        /usr/lib64/graalvm/graalvm-java21
+Using CLASSPATH:       /opt/apache-tomcat-10.0.27/bin/bootstrap.jar:/opt/apache-tomcat-10.0.27/bin/tomcat-juli.jar
+Using CATALINA_OPTS:   
+Tomcat started.
+[opc@jms-instance-2 bin]$ curl http://localhost:8080/springTomcat/greeting
+Hello Spring Framework World
+[opc@jms-instance-2 bin]$
+```
