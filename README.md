@@ -21,7 +21,7 @@
    
 * **[3. パッケージングとネイティブビルド](#Step3-Run-the-demo)**
 
-### 1. サンプルアプリケーションをTomcatに導入
+## 1. サンプルアプリケーションをTomcatに導入
 ```
 git clone https://github.com/junsuzu/tomcat-native-jp
 $ cd spring-framework-tomcat-sample
