@@ -28,3 +28,17 @@ $ cd spring-framework-tomcat-sample
 $ mvn clean package
 $ cd target
 ```
+
+target配下にwarファイルがビルドされることを確認します。
+```
+[opc@instance target]$ ls -la
+total 4276
+drwxrwxr-x. 7 opc opc     132 Dec 24 06:09 .
+drwxrwxr-x. 4 opc opc      46 Dec 24 06:09 ..
+drwxrwxr-x. 3 opc opc      17 Dec 24 06:09 classes
+drwxrwxr-x. 3 opc opc      25 Dec 24 06:09 generated-sources
+drwxrwxr-x. 2 opc opc      28 Dec 24 06:09 maven-archiver
+drwxrwxr-x. 3 opc opc      35 Dec 24 06:09 maven-status
+drwxrwxr-x. 4 opc opc      54 Dec 24 06:09 springTomcat
+-rw-rw-r--. 1 opc opc 4378492 Dec 24 06:09 springTomcat.war
+```
