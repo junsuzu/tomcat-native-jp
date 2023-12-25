@@ -4,9 +4,9 @@
 ## Overview  
 * このデモはTomcatサーバおよびサーバ上で稼働するアプリケーションをnative image化する手順を示します。
 * 以下のTomcatオフィシャルサイトの記事[Ahead of Time compilation support](https://tomcat.apache.org/tomcat-11.0-doc/graal.html)を参考にしています。
-** 考え方として、Tomcatサーバおよび稼働アプリケーションの依存関係を含む単一実行可能なJARファイルを生成します。
-** そのJARファイルに対して、GraalVMが提供するエージェントツールを使用してnative imageを生成するためのメタデータを生成します。
-** GraalVMが提供するネイティブビルドツールを使用してnative imageを生成します。
+　** 考え方として、Tomcatサーバおよび稼働アプリケーションの依存関係を含む単一実行可能なJARファイルを生成します。
+　** そのJARファイルに対して、GraalVMが提供するエージェントツールを使用してnative imageを生成するためのメタデータを生成します。
+　** GraalVMが提供するネイティブビルドツールを使用してnative imageを生成します。
 * 本デモにおけるサンプルアプリケーションはSpring Framework6.xに準拠しています。
 
 ## デモ環境
