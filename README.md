@@ -81,9 +81,13 @@ Tomcatの公式ドキュメントhttps://tomcat.apache.org/tomcat-11.0-doc/graal
 ```
 git clone https://github.com/apache/tomcat.git
 
-cd tomcat/modules/stuffed
 ```
-> **NOTE:** stuffedフォルダーをバックアップするか、別のワーク用ディレクトリにコピーすることをお勧めします。  
+本デモではstuffedフォルダーをtomcat-native-jp配下にコピーし、stuffed配下で後続タスクを行います。
+```
+cp -r tomcat/modules/stuffed ../tomcat-native-jp/
+
+```
+> **NOTE:** 参考のため、全タスク完了後のstuffedフォルダーをcompleteフォルダーに格納しておきます。  
 > **NOTE:** stuffedの格納場所を環境変数として定義しておきます。以下は~/.bashrcにおける定義例です：
 ```
 export JAVA_HOME=/usr/lib64/graalvm/graalvm-java21
@@ -95,7 +99,7 @@ export PATH=$MVN_HOME/bin:$PATH
 export ANT_HOM=/opt/apache-ant-1.10.14
 export PATH=$ANT_HOME/bin:$PATH
 
-export TOMCAT_STUFFED=/home/opc/project/tomcat-native/stuffed
+export TOMCAT_STUFFED=/home/opc/project/tomcat-native-jp/stuffed
 
 ```
 
