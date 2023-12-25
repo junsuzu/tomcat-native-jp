@@ -39,7 +39,7 @@ export PATH=$ANT_HOME/bin:$PATH
 Spring Frameworkを使用したWebアプリケーションを作成して、warファイルとしてTomcatにデプロイし、正常稼働を確認します。のちにこのアプリケーションをnative image化します。
 
 ```
-git clone https://github.com/junsuzu/tomcat-native-jp
+$ git clone https://github.com/junsuzu/tomcat-native-jp
 $ cd spring-framework-tomcat-sample
 $ mvn clean package
 $ cd target
