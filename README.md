@@ -83,7 +83,7 @@ git clone https://github.com/apache/tomcat.git
 
 cd tomcat/modules/stuffed
 ```
-> **NOTE:** stuffedフォルダーをバックアップするか、別のワーク用ディレクトリにコピーすることをお勧めします。
+> **NOTE:** stuffedフォルダーをバックアップするか、別のワーク用ディレクトリにコピーすることをお勧めします。  
 > **NOTE:** stuffedの格納場所を環境変数として定義しておきます。以下は~/.bashrcにおける定義例です：
 ```
 export JAVA_HOME=/usr/lib64/graalvm/graalvm-java21
@@ -101,7 +101,11 @@ export TOMCAT_STUFFED=/home/opc/project/tomcat-native/stuffed
 
 
 
-Tomcatサーバにデプロイ済みのWebアプリケーション「springTomcat」フォルダーをstuffed配下のwebappsディレクトリにコピーします。  
+Tomcatサーバにデプロイ済みのWebアプリケーション「springTomcat」フォルダーをstuffed配下のwebappsディレクトリにコピーします。 
+```
+cd $TOMCAT_HOME/webapps/
+cp -r $TOMCAT_HOME/webapps/springTomcat ../stuffed/webapps/
+```
 spring-framework-tomcat-sample/src/main/java配下のJavaソースをstuffed/webappsの配下にコピーします。  
 
 ```
@@ -111,7 +115,6 @@ cp -r src/main/java/* ../stuffed/webapps/springTomcat/WEB-INF/classes/
 
 Tomcatサーバのconfディレクトリ配下のすべてをstuffed/confディレクトリにコピーします。  
 ```
-cd $TOMCAT_HOME
 cp -r $TOMCAT_HOME/conf/* ../stuffed/conf/
 ```
 
