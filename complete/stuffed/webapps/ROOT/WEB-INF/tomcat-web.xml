@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0"
+         metadata-complete="false">
+<!--
+Automatically created by Apache Tomcat JspC.
+-->
+
+
+    <servlet>
+        <servlet-name>ROOT.org.apache.jsp.index_jsp</servlet-name>
+        <servlet-class>ROOT.org.apache.jsp.index_jsp</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ROOT.org.apache.jsp.index_jsp</servlet-name>
+        <url-pattern>/index.jsp</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+

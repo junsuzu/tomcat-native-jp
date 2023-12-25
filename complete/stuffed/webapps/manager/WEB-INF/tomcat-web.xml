@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0"
+         metadata-complete="false">
+<!--
+Automatically created by Apache Tomcat JspC.
+-->
+
+
+    <servlet>
+        <servlet-name>manager.org.apache.jsp.index_jsp</servlet-name>
+        <servlet-class>manager.org.apache.jsp.index_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>manager.org.apache.jsp.WEB_002dINF.jsp._401_jsp</servlet-name>
+        <servlet-class>manager.org.apache.jsp.WEB_002dINF.jsp._401_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>manager.org.apache.jsp.WEB_002dINF.jsp._403_jsp</servlet-name>
+        <servlet-class>manager.org.apache.jsp.WEB_002dINF.jsp._403_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>manager.org.apache.jsp.WEB_002dINF.jsp.connectorCerts_jsp</servlet-name>
+        <servlet-class>manager.org.apache.jsp.WEB_002dINF.jsp.connectorCerts_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>manager.org.apache.jsp.WEB_002dINF.jsp.connectorCiphers_jsp</servlet-name>
+        <servlet-class>manager.org.apache.jsp.WEB_002dINF.jsp.connectorCiphers_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>manager.org.apache.jsp.WEB_002dINF.jsp._404_jsp</servlet-name>
+        <servlet-class>manager.org.apache.jsp.WEB_002dINF.jsp._404_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>manager.org.apache.jsp.WEB_002dINF.jsp.connectorTrustedCerts_jsp</servlet-name>
+        <servlet-class>manager.org.apache.jsp.WEB_002dINF.jsp.connectorTrustedCerts_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>manager.org.apache.jsp.WEB_002dINF.jsp.sessionDetail_jsp</servlet-name>
+        <servlet-class>manager.org.apache.jsp.WEB_002dINF.jsp.sessionDetail_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>manager.org.apache.jsp.WEB_002dINF.jsp.sessionsList_jsp</servlet-name>
+        <servlet-class>manager.org.apache.jsp.WEB_002dINF.jsp.sessionsList_jsp</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>manager.org.apache.jsp.index_jsp</servlet-name>
+        <url-pattern>/index.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>manager.org.apache.jsp.WEB_002dINF.jsp._401_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/401.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>manager.org.apache.jsp.WEB_002dINF.jsp._403_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/403.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>manager.org.apache.jsp.WEB_002dINF.jsp.connectorCerts_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/connectorCerts.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>manager.org.apache.jsp.WEB_002dINF.jsp.connectorCiphers_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/connectorCiphers.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>manager.org.apache.jsp.WEB_002dINF.jsp._404_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/404.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>manager.org.apache.jsp.WEB_002dINF.jsp.connectorTrustedCerts_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/connectorTrustedCerts.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>manager.org.apache.jsp.WEB_002dINF.jsp.sessionDetail_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/sessionDetail.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>manager.org.apache.jsp.WEB_002dINF.jsp.sessionsList_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/sessionsList.jsp</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+
