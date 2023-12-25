@@ -4,9 +4,9 @@
 ## Overview  
 * このデモはTomcatサーバおよびサーバ上で稼働するアプリケーションをnative image化する手順を示します。  
 * 以下のTomcatオフィシャルサイトの記事https://tomcat.apache.org/tomcat-11.0-doc/graal.html を参考にしています。  
-        * Tomcatサーバおよび稼働アプリケーションの依存関係を含む単一実行可能なJARファイルを生成します。  
-        * そのJARファイルに対して、GraalVMが提供するエージェントツールを使用してnative imageを生成するためのメタデータを生成します。  
-        * GraalVMが提供するネイティブビルドツールを使用してnative imageを生成します。  
+        1. Tomcatサーバおよび稼働アプリケーションの依存関係を含む単一実行可能なJARファイルを生成します。  
+        2. そのJARファイルに対して、GraalVMが提供するエージェントツールを使用してnative imageを生成するためのメタデータを生成します。  
+        3. GraalVMが提供するネイティブビルドツールを使用してnative imageを生成します。  
 * 本デモにおけるサンプルアプリケーションはSpring Framework6.xに準拠しています。
 
 ## デモ環境
@@ -35,7 +35,9 @@ export PATH=$ANT_HOME/bin:$PATH
    
 * **[3. パッケージングとネイティブビルド](#3-パッケージングとネイティブビルド)**
 
-## 1. サンプルアプリケーションをTomcatに導入
+## 1. サンプルアプリケーションをTomcatに導入  
+Spring Frameworkを使用したWebアプリケーションを作成して、warファイルとしてTomcatにデプロイし、正常稼働を確認します。のちにこのアプリケーションをnative image化します。
+
 ```
 git clone https://github.com/junsuzu/tomcat-native-jp
 $ cd spring-framework-tomcat-sample
@@ -43,7 +45,7 @@ $ mvn clean package
 $ cd target
 ```
 
-target配下にwarファイルがビルドされることを確認します。
+targetディレクトリ配下にspringTomcat.warファイルがビルドされることを確認します。
 ```
 [opc@instance target]$ ls -la
 total 4276
@@ -56,7 +58,7 @@ drwxrwxr-x. 3 opc opc      35 Dec 24 06:09 maven-status
 drwxrwxr-x. 4 opc opc      54 Dec 24 06:09 springTomcat
 -rw-rw-r--. 1 opc opc 4378492 Dec 24 06:09 springTomcat.war
 ```
-springTomcat.warファイルをTomcatサーバのwebappsディレクトリにコピーし、Tomcatサーバ上アプリが正常に稼働することを確認してください。
+springTomcat.warファイルをTomcatサーバのwebappsディレクトリにコピーすると、warファイルが自動展開され、「springTomcat」というフォルダが生成されます。Tomcatサーバ上アプリが正常に稼働し、「Hello Spring Framework World」が表示されることを確認してください。
 
 ```
 [opc@jms-instance-2 target]$ cd /opt/apache-tomcat-10.0.27/bin
@@ -81,22 +83,44 @@ git clone https://github.com/apache/tomcat.git
 
 cd tomcat/modules/stuffed
 ```
+> **NOTE:** stuffedフォルダーをバックアップするか、別のワーク用ディレクトリにコピーすることをお勧めします。
+> **NOTE:** stuffedの格納場所を環境変数として定義しておきます。以下は~/.bashrcにおける定義例です：
+```
+export JAVA_HOME=/usr/lib64/graalvm/graalvm-java21
+export PATH=$JAVA_HOME/bin:$PATH
 
-Tomcatサーバ配下デプロイ済みのspringTomcatをstuffed配下のwebappsディレクトリにコピーします。
-spring-framework-tomcat-sample/src/main/java配下のJavaソースをstuffed/webappsの配下にコピーします。
+export MVN_HOME=/opt/apache-maven-3.6.3
+export PATH=$MVN_HOME/bin:$PATH
+
+export ANT_HOM=/opt/apache-ant-1.10.14
+export PATH=$ANT_HOME/bin:$PATH
+
+export TOMCAT_STUFFED=/home/opc/project/tomcat-native/stuffed
+
+```
+
+
+
+Tomcatサーバにデプロイ済みのWebアプリケーション「springTomcat」フォルダーをstuffed配下のwebappsディレクトリにコピーします。  
+spring-framework-tomcat-sample/src/main/java配下のJavaソースをstuffed/webappsの配下にコピーします。  
+
 ```
 cd spring-framework-tomcat-sample
 cp -r src/main/java/* ../stuffed/webapps/springTomcat/WEB-INF/classes/
 ```
 
-Tomcatサーバのconfディレクトリ配下のすべてをstuffed/confディレクトリにコピーします。
-
+Tomcatサーバのconfディレクトリ配下のすべてをstuffed/confディレクトリにコピーします。  
+```
+cd $TOMCAT_HOME
+cp -r $TOMCAT_HOME/conf/* ../stuffed/conf/
+```
 
 ## 3. パッケージングとネイティブビルド
-stuffed配下のpom.xmlを修正します。
+stuffed配下のpom.xmlを修正します。  
 
-tomcat.versionを実際に使用するTomcatのバージョンに変更します。
-springframeworkのバージョンを追加します。
+tomcat.versionを実際に使用するTomcatのバージョンに変更します。  
+また、springframeworkのバージョンを追加します。
+> **NOTE:** 実際のWebアプリケーションに合わせて、必要に応じてライブラリやプラグインを追加してください。  
 
 ```
 <properties>
@@ -133,7 +157,7 @@ mavenでビルドをします。
 cd stuffed
 mvn package
 ```
-mavenによるビルドが完了後、Antによりビルドします。
+mavenによるビルドが完了後、Antで再度ビルドします。webapp.name変数には実際配布済みのWebアプリケーション名を指定します。
 
 ```
 ant -Dwebapp.name=springTomcat -f webapp-jspc.ant.xml
@@ -150,13 +174,14 @@ $JAVA_HOME/bin/java\
         -Dcatalina.base=. -Djava.util.logging.config.file=conf/logging.properties\
         -jar target/tomcat-stuffed-1.0.jar --catalina -generateCode src/main/java
 ```
+> **NOTE:** 実行時にJuli関連のTomcatロギング用ライブラリが見つからないというエラーメッセージが出ますが、検証には特に支障ありません。エラーメッセージを回避したい場合、confディレクトリ配下のlogging.propertiesを編集し、Juli関連のライブラリ記述をコメントアウトしてください。
 
-再度mavenでビルドをします。
+Ctrl+Cで上記コマンドで起動したプロセスを終了し、再度mavenでビルドをします。
 ```
 mvn package
 ```
 
-Reflectionを解決するため、以下のagentツールを使用して、メタデータを生成します。
+Native image実行時、Reflectionを解決するため、以下のagentツールを使用して、メタデータを生成します。
 ```
 $JAVA_HOME/bin/java\
         -agentlib:native-image-agent=config-output-dir=$TOMCAT_STUFFED/target/\
@@ -165,7 +190,7 @@ $JAVA_HOME/bin/java\
         -jar target/tomcat-stuffed-1.0.jar --catalina -useGeneratedCode
 ```
 
-native imageをビルドします。
+GraalVMのネイティブビルドツールを使用してnative imageをビルドします。
 ```
 native-image --no-server\
         --allow-incomplete-classpath --enable-https\
@@ -178,7 +203,13 @@ native-image --no-server\
         -H:JNIConfigurationFiles=$TOMCAT_STUFFED/tomcat-jni.json\
         -jar $TOMCAT_STUFFED/target/tomcat-stuffed-1.0.jar
 ```
-
+targetディレクトリ配下にネイティブ実行ファイル「tomcat-stuffed-1.0」が生成されていることを確認してください。  
+native imageを起動します。
 ```
 ./tomcat-stuffed-1.0 -Dcatalina.base=. -Djava.util.logging.config.file=conf/logging.properties --catalina -useGeneratedCode
+```
+別ターミナルからWebアプリケーションが正常稼働することを確認してください。
+```
+[opc@jms-instance-2 bin]$ curl http://localhost:8080/springTomcat/greeting
+Hello Spring Framework World
 ```
