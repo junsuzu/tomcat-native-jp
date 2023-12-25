@@ -77,7 +77,7 @@ Hello Spring Framework World
 
 ## 2. AOT用テンプレートのダウンロード
 
-Tomcatの公式ドキュメントhttps://tomcat.apache.org/tomcat-11.0-doc/graal.html に従って、Tomcat Stuffed moduleをダウンロードしてください。
+Tomcatの公式ドキュメントhttps://tomcat.apache.org/tomcat-11.0-doc/graal.html に従い、Tomcat Stuffed moduleをダウンロードしてください。
 ```
 git clone https://github.com/apache/tomcat.git
 
@@ -103,7 +103,6 @@ export TOMCAT_STUFFED=/home/opc/project/tomcat-native/stuffed
 
 Tomcatサーバにデプロイ済みのWebアプリケーション「springTomcat」フォルダーをstuffed配下のwebappsディレクトリにコピーします。 
 ```
-cd $TOMCAT_HOME/webapps/
 cp -r $TOMCAT_HOME/webapps/springTomcat ../stuffed/webapps/
 ```
 spring-framework-tomcat-sample/src/main/java配下のJavaソースをstuffed/webappsの配下にコピーします。  
@@ -192,6 +191,19 @@ $JAVA_HOME/bin/java\
         -Dcatalina.base=. -Djava.util.logging.config.file=conf/logging.properties\
         -jar target/tomcat-stuffed-1.0.jar --catalina -useGeneratedCode
 ```
+native image用メタデータを生成するため、Webアプリケーションに含まれるすべてのパターンを実行する必要があります。今回使用するWebアプリケーションコンテキストルート「/」およびサーブレットが処理するためのURLパターン「greeting」がありますので、別ターミナルを立ち上げ、その２つのパターンをそれぞれ実行します。
+```
+[opc@jms-instance-2 /]$ curl http://localhost:8080/springTomcat/
+<html>
+<body>
+<h2>Hello Spring!</h2>
+</body>
+</html>
+[opc@jms-instance-2 /]$ curl http://localhost:8080/springTomcat/greeting
+Hello Spring Framework World
+```
+
+実行できましたら、Ctrl+CでJavaプロセスを停止します。
 
 GraalVMのネイティブビルドツールを使用してnative imageをビルドします。
 ```
@@ -213,6 +225,6 @@ native imageを起動します。
 ```
 別ターミナルからWebアプリケーションが正常稼働することを確認してください。
 ```
-[opc@jms-instance-2 bin]$ curl http://localhost:8080/springTomcat/greeting
+[opc@jms-instance-2 /]$ curl http://localhost:8080/springTomcat/greeting
 Hello Spring Framework World
 ```
