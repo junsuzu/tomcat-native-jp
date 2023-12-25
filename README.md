@@ -87,7 +87,7 @@ git clone https://github.com/apache/tomcat.git
 cp -r tomcat/modules/stuffed ../tomcat-native-jp/
 
 ```
-> **NOTE:** 参考のため、全タスク完了後のstuffedフォルダーをcompleteフォルダーに格納しておきます。  
+> **NOTE:** 参考のため、全タスク完了後のstuffedフォルダーをcompleteフォルダーに格納しております。  
 > **NOTE:** stuffedの格納場所を環境変数として定義しておきます。以下は~/.bashrcにおける定義例です：
 ```
 export JAVA_HOME=/usr/lib64/graalvm/graalvm-java21
