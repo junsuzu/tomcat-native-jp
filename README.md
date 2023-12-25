@@ -2,7 +2,7 @@
 このデモではTomcatサーバをnative image化する手順を示しています。
 
 ## Overview  
-* このデモではTomcatサーバをnative image化する手順を示しています。
+* このデモはTomcatサーバおよびサーバ上で稼働するアプリケーションをnative image化する手順を示します。
 * 以下のTomcatオフィシャルサイトの記事[Ahead of Time compilation support](https://tomcat.apache.org/tomcat-11.0-doc/graal.html)を参考にしています：
 * サンプルアプリケーションはSpring Frameworkに準拠しています。
 
@@ -12,7 +12,18 @@
 * [Apache Maven 3.6.3](https://maven.apache.org/download.cgi)
 * [Apache Ant 1.10.14](https://ant.apache.org/bindownload.cgi)
 
-> **NOTE:** 上記ソフトウェアはすべてインストール済みという前提でデモ手順を記載します。
+> **NOTE:** 上記ソフトウェアはすべてインストール済みという前提でデモ手順を記載します。Linux上インストールした各ソフトウェアの環境変数を設定する~/.bashrcの例を以下示します。
+```
+export JAVA_HOME=/usr/lib64/graalvm/graalvm-java21
+export PATH=$JAVA_HOME/bin:$PATH
+
+export MVN_HOME=/opt/apache-maven-3.6.3
+export PATH=$MVN_HOME/bin:$PATH
+
+export ANT_HOM=/opt/apache-ant-1.10.14
+export PATH=$ANT_HOME/bin:$PATH
+
+```
 
 ## Contents
 * **[1. サンプルアプリケーションをTomcatに導入](#1-サンプルアプリケーションをTomcatに導入)**
