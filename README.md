@@ -191,7 +191,7 @@ $JAVA_HOME/bin/java\
         -Dcatalina.base=. -Djava.util.logging.config.file=conf/logging.properties\
         -jar target/tomcat-stuffed-1.0.jar --catalina -useGeneratedCode
 ```
-native image用メタデータを生成するため、Webアプリケーションに含まれるすべてのパターンを実行する必要があります。今回使用するWebアプリケーションコンテキストルート「/」およびサーブレットが処理するためのURLパターン「greeting」がありますので、別ターミナルを立ち上げ、その２つのパターンをそれぞれ実行します。
+native image用メタデータを生成するため、Webアプリケーションに含まれるすべてのパターンを実行する必要があります。今回使用するWebアプリケーションはコンテキストルートおよびサーブレットが処理するためのURLパターン「greeting」がありますので、別ターミナルを立ち上げ、この２つのパターンをそれぞれ実行します。
 ```
 [opc@jms-instance-2 /]$ curl http://localhost:8080/springTomcat/
 <html>
