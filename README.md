@@ -107,13 +107,13 @@ export TOMCAT_STUFFED=/home/opc/project/tomcat-native-jp/stuffed
 
 Tomcatサーバにデプロイ済みのWebアプリケーション「springTomcat」フォルダーをstuffed配下のwebappsディレクトリにコピーします。 
 ```
-cp -r $TOMCAT_HOME/webapps/springTomcat ../stuffed/webapps/
+cp -r $TOMCAT_HOME/webapps/springTomcat $TOMCAT_STUFFED/webapps/
 ```
 spring-framework-tomcat-sample/src/main/java配下のJavaソースをstuffed/webappsの配下にコピーします。  
 
 ```
 cd spring-framework-tomcat-sample
-cp -r src/main/java/* ../stuffed/webapps/springTomcat/WEB-INF/classes/
+cp -r src/main/java/* $TOMCAT_STUFFED/webapps/springTomcat/WEB-INF/classes/
 ```
 
 Tomcatサーバのconfディレクトリ配下のすべてをstuffed/confディレクトリにコピーします。  
