@@ -1,0 +1,3329 @@
+{
+  "resources":{
+  "includes":[{
+    "pattern":"\\QMETA-INF/services/jakarta.el.ExpressionFactory\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/jakarta.servlet.ServletContainerInitializer\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/java.lang.System$LoggerFinder\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/java.net.spi.InetAddressResolverProvider\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/java.net.spi.URLStreamHandlerProvider\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/java.nio.channels.spi.SelectorProvider\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/java.sql.Driver\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/java.util.spi.ResourceBundleControlProvider\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/javax.naming.spi.InitialContextFactory\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/javax.xml.parsers.SAXParserFactory\\E"
+  }, {
+    "pattern":"\\QMETA-INF/services/org.apache.juli.logging.Log\\E"
+  }, {
+    "pattern":"\\QMETA-INF/spring.components\\E"
+  }, {
+    "pattern":"\\QMETA-INF/spring.factories\\E"
+  }, {
+    "pattern":"\\QROOT/org/apache/jsp/index_jsp.class\\E"
+  }, {
+    "pattern":"\\Qcom/example/MainServlet.class\\E"
+  }, {
+    "pattern":"\\Qcom/sun/org/apache/xerces/internal/jaxp/SAXParserFactoryImpl.class\\E"
+  }, {
+    "pattern":"\\Qconf/Catalina/localhost/context.xml.default\\E"
+  }, {
+    "pattern":"\\Qconf/Catalina/localhost/web.xml.default\\E"
+  }, {
+    "pattern":"\\Qgroovy/lang/Binding.class\\E"
+  }, {
+    "pattern":"\\Qgroovy/lang/Closure.class\\E"
+  }, {
+    "pattern":"\\Qgroovy/lang/GroovyObject.class\\E"
+  }, {
+    "pattern":"\\Qgroovy/lang/GroovyObjectSupport.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/el/CompositeELResolver.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/el/ELContext.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/el/ELException.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/el/ELResolver.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/el/Expression.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/el/FunctionMapper.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/el/JreCompat.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/el/MethodExpression.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/el/MethodNotFoundException.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/el/PropertyNotFoundException.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/el/PropertyNotWritableException.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/el/Util$Wrapper.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/el/ValueExpression.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/el/VariableMapper.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/enterprise/concurrent/Trigger.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/inject/Provider.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/mail/Authenticator.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/security/auth/message/MessageInfo.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/security/auth/message/ServerAuth.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/security/auth/message/callback/PrivateKeyCallback$Request.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/security/auth/message/callback/SecretKeyCallback$Request.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/security/auth/message/config/AuthConfig.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/security/auth/message/config/AuthConfigFactory$RegistrationContext.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/security/auth/message/config/AuthConfigFactory.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/security/auth/message/config/AuthConfigProvider.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/security/auth/message/config/RegistrationListener.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/security/auth/message/config/ServerAuthConfig.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/security/auth/message/config/ServerAuthContext.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/AsyncContext.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/Filter.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/FilterChain.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/FilterConfig.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/FilterRegistration$Dynamic.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/FilterRegistration.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/GenericFilter.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/GenericServlet.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/Registration$Dynamic.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/Registration.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/RequestDispatcher.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/Servlet.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/ServletConfig.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/ServletContext.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/ServletContextEvent.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/ServletInputStream.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/ServletOutputStream.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/ServletRegistration$Dynamic.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/ServletRegistration.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/ServletRequest.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/ServletRequestEvent.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/ServletRequestWrapper.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/ServletResponse.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/ServletResponseWrapper.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/SessionCookieConfig.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/http/HttpServlet.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/http/HttpServletMapping.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/http/HttpServletRequest.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/http/HttpServletRequestWrapper.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/http/HttpServletResponse.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/http/HttpServletResponseWrapper.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/http/HttpSession.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/http/HttpSessionBindingListener.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/http/HttpSessionContext.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/http/HttpSessionEvent.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/http/Part.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/http/PushBuilder.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/http/RFC6265Validator.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/jsp/HttpJspPage.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/jsp/JspPage.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/jsp/el/ImplicitObjectELResolver$ScopeMap.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/jsp/tagext/IterationTag.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/jsp/tagext/JspTag.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/jsp/tagext/Tag.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/jsp/tagext/TagSupport.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/XMLSchema.dtd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/datatypes.dtd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/j2ee_1_4.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/j2ee_web_services_1_1.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/j2ee_web_services_client_1_1.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/jakartaee_9.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/jakartaee_web_services_2_0.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/jakartaee_web_services_client_2_0.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/javaee_5.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/javaee_6.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/javaee_7.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/javaee_8.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/javaee_web_services_1_2.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/javaee_web_services_1_3.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/javaee_web_services_1_4.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/javaee_web_services_client_1_2.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/javaee_web_services_client_1_3.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/javaee_web_services_client_1_4.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/jsp_2_0.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/jsp_2_1.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/jsp_2_2.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/jsp_2_3.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/jsp_3_0.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/web-app_2_2.dtd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/web-app_2_3.dtd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/web-app_2_4.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/web-app_2_5.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/web-app_3_0.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/web-app_3_1.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/web-app_4_0.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/web-app_5_0.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/web-common_3_0.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/web-common_3_1.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/web-common_4_0.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/web-common_5_0.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/web-fragment_3_0.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/web-fragment_3_1.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/web-fragment_4_0.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/web-fragment_5_0.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/web-jsptaglibrary_1_1.dtd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/web-jsptaglibrary_1_2.dtd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/web-jsptaglibrary_2_0.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/web-jsptaglibrary_2_1.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/web-jsptaglibrary_3_0.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/servlet/resources/xml.xsd\\E"
+  }, {
+    "pattern":"\\Qjakarta/transaction/Synchronization.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/validation/ConstraintValidatorFactory.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/validation/MessageInterpolator.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/validation/ParameterNameProvider.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/validation/Validator.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/validation/ValidatorFactory.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/ClientEndpointConfig$Configurator.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/ContainerProvider.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/Decoder.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/Encoder.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/Endpoint.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/EndpointConfig.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/Extension$Parameter.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/Extension.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/HandshakeResponse.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/MessageHandler$Partial.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/MessageHandler$Whole.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/MessageHandler.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/PongMessage.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/RemoteEndpoint$Async.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/RemoteEndpoint$Basic.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/RemoteEndpoint.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/SendHandler.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/Session.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/WebSocketContainer.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/server/HandshakeRequest.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/server/ServerContainer.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/server/ServerEndpointConfig$Configurator.class\\E"
+  }, {
+    "pattern":"\\Qjakarta/websocket/server/ServerEndpointConfig.class\\E"
+  }, {
+    "pattern":"\\Qjava/beans/BeanInfo.class\\E"
+  }, {
+    "pattern":"\\Qjava/beans/FeatureDescriptor.class\\E"
+  }, {
+    "pattern":"\\Qjava/beans/IndexedPropertyDescriptor.class\\E"
+  }, {
+    "pattern":"\\Qjava/beans/PropertyChangeListener.class\\E"
+  }, {
+    "pattern":"\\Qjava/beans/PropertyDescriptor.class\\E"
+  }, {
+    "pattern":"\\Qjava/beans/PropertyEditor.class\\E"
+  }, {
+    "pattern":"\\Qjava/beans/PropertyEditorSupport.class\\E"
+  }, {
+    "pattern":"\\Qjava/beans/SimpleBeanInfo.class\\E"
+  }, {
+    "pattern":"\\Qjava/io/BufferedReader.class\\E"
+  }, {
+    "pattern":"\\Qjava/io/ByteArrayOutputStream.class\\E"
+  }, {
+    "pattern":"\\Qjava/io/CharConversionException.class\\E"
+  }, {
+    "pattern":"\\Qjava/io/Closeable.class\\E"
+  }, {
+    "pattern":"\\Qjava/io/DataInput.class\\E"
+  }, {
+    "pattern":"\\Qjava/io/Externalizable.class\\E"
+  }, {
+    "pattern":"\\Qjava/io/FilenameFilter.class\\E"
+  }, {
+    "pattern":"\\Qjava/io/FilterInputStream.class\\E"
+  }, {
+    "pattern":"\\Qjava/io/FilterOutputStream.class\\E"
+  }, {
+    "pattern":"\\Qjava/io/Flushable.class\\E"
+  }, {
+    "pattern":"\\Qjava/io/IOException.class\\E"
+  }, {
+    "pattern":"\\Qjava/io/InputStream.class\\E"
+  }, {
+    "pattern":"\\Qjava/io/ObjectInput.class\\E"
+  }, {
+    "pattern":"\\Qjava/io/ObjectInputStream.class\\E"
+  }, {
+    "pattern":"\\Qjava/io/ObjectStreamConstants.class\\E"
+  }, {
+    "pattern":"\\Qjava/io/OutputStream.class\\E"
+  }, {
+    "pattern":"\\Qjava/io/PrintStream.class\\E"
+  }, {
+    "pattern":"\\Qjava/io/PrintWriter.class\\E"
+  }, {
+    "pattern":"\\Qjava/io/Reader.class\\E"
+  }, {
+    "pattern":"\\Qjava/io/Serializable.class\\E"
+  }, {
+    "pattern":"\\Qjava/io/Writer.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/Appendable.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/AutoCloseable.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/CharSequence.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/ClassLoader.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/Cloneable.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/Comparable.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/Enum.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/Error.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/Exception.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/IllegalArgumentException.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/IllegalStateException.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/IndexOutOfBoundsException.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/InheritableThreadLocal.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/Iterable.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/LinkageError.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/Object.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/Readable.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/Record.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/Runnable.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/RuntimeException.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/SecurityManager.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/String.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/Thread.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/ThreadLocal.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/Throwable.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/UnsatisfiedLinkError.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/constant/Constable.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/instrument/ClassFileTransformer.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/ref/Reference.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/ref/SoftReference.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/ref/WeakReference.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/reflect/AnnotatedElement.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/reflect/InvocationHandler.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/reflect/ParameterizedType.class\\E"
+  }, {
+    "pattern":"\\Qjava/lang/reflect/Type.class\\E"
+  }, {
+    "pattern":"\\Qjava/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qjava/net/JarURLConnection.class\\E"
+  }, {
+    "pattern":"\\Qjava/net/URLClassLoader.class\\E"
+  }, {
+    "pattern":"\\Qjava/net/URLConnection.class\\E"
+  }, {
+    "pattern":"\\Qjava/net/URLStreamHandler.class\\E"
+  }, {
+    "pattern":"\\Qjava/net/URLStreamHandlerFactory.class\\E"
+  }, {
+    "pattern":"\\Qjava/nio/channels/AsynchronousByteChannel.class\\E"
+  }, {
+    "pattern":"\\Qjava/nio/channels/AsynchronousChannel.class\\E"
+  }, {
+    "pattern":"\\Qjava/nio/channels/ByteChannel.class\\E"
+  }, {
+    "pattern":"\\Qjava/nio/channels/Channel.class\\E"
+  }, {
+    "pattern":"\\Qjava/nio/channels/CompletionHandler.class\\E"
+  }, {
+    "pattern":"\\Qjava/nio/channels/GatheringByteChannel.class\\E"
+  }, {
+    "pattern":"\\Qjava/nio/channels/ReadableByteChannel.class\\E"
+  }, {
+    "pattern":"\\Qjava/nio/channels/ScatteringByteChannel.class\\E"
+  }, {
+    "pattern":"\\Qjava/nio/channels/WritableByteChannel.class\\E"
+  }, {
+    "pattern":"\\Qjava/nio/charset/Charset.class\\E"
+  }, {
+    "pattern":"\\Qjava/nio/charset/CharsetDecoder.class\\E"
+  }, {
+    "pattern":"\\Qjava/nio/charset/CharsetEncoder.class\\E"
+  }, {
+    "pattern":"\\Qjava/nio/file/FileVisitor.class\\E"
+  }, {
+    "pattern":"\\Qjava/nio/file/SimpleFileVisitor.class\\E"
+  }, {
+    "pattern":"\\Qjava/security/BasicPermission.class\\E"
+  }, {
+    "pattern":"\\Qjava/security/GeneralSecurityException.class\\E"
+  }, {
+    "pattern":"\\Qjava/security/Guard.class\\E"
+  }, {
+    "pattern":"\\Qjava/security/Permission.class\\E"
+  }, {
+    "pattern":"\\Qjava/security/Principal.class\\E"
+  }, {
+    "pattern":"\\Qjava/security/PrivilegedAction.class\\E"
+  }, {
+    "pattern":"\\Qjava/security/PrivilegedExceptionAction.class\\E"
+  }, {
+    "pattern":"\\Qjava/security/SecureClassLoader.class\\E"
+  }, {
+    "pattern":"\\Qjava/security/cert/Certificate.class\\E"
+  }, {
+    "pattern":"\\Qjava/security/cert/X509Certificate.class\\E"
+  }, {
+    "pattern":"\\Qjava/security/cert/X509Extension.class\\E"
+  }, {
+    "pattern":"\\Qjava/sql/CallableStatement.class\\E"
+  }, {
+    "pattern":"\\Qjava/sql/Connection.class\\E"
+  }, {
+    "pattern":"\\Qjava/sql/DatabaseMetaData.class\\E"
+  }, {
+    "pattern":"\\Qjava/sql/Driver.class\\E"
+  }, {
+    "pattern":"\\Qjava/sql/PreparedStatement.class\\E"
+  }, {
+    "pattern":"\\Qjava/sql/ResultSet.class\\E"
+  }, {
+    "pattern":"\\Qjava/sql/SQLException.class\\E"
+  }, {
+    "pattern":"\\Qjava/sql/Statement.class\\E"
+  }, {
+    "pattern":"\\Qjava/sql/Wrapper.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/AbstractCollection.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/AbstractList.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/AbstractMap.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/AbstractQueue.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/AbstractSet.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/ArrayDeque.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/ArrayList.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/Collection.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/Comparator.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/Deque.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/Dictionary.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/Enumeration.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/EventListener.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/EventObject.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/HashMap.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/HashSet.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/Hashtable.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/Iterator.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/LinkedHashMap.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/LinkedHashSet.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/List.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/Map$Entry.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/Map.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/Properties.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/Queue.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/RandomAccess.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/ResourceBundle$Control.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/ResourceBundle.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/SequencedCollection.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/SequencedMap.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/SequencedSet.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/Set.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/Spliterator.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/TimerTask.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/AbstractExecutorService.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/BlockingQueue.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/Callable.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/CompletableFuture.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/CompletionStage.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/ConcurrentHashMap.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/ConcurrentMap.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/CopyOnWriteArrayList.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/Delayed.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/Executor.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/ExecutorService.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/ForkJoinPool$ForkJoinWorkerThreadFactory.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/ForkJoinWorkerThread.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/Future.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/FutureTask.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/LinkedBlockingQueue.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/RejectedExecutionException.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/RejectedExecutionHandler.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/RunnableFuture.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/ScheduledExecutorService.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/ScheduledFuture.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/ThreadFactory.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/ThreadPoolExecutor.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/atomic/AtomicReference.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/locks/AbstractOwnableSynchronizer.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/locks/AbstractQueuedSynchronizer.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/locks/Lock.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/locks/ReentrantLock.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/concurrent/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qjava/util/function/BiFunction.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/function/Consumer.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/function/Function.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/function/Predicate.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/function/Supplier.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/jar/JarInputStream.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/logging/Formatter.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/logging/Handler.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/logging/LogManager.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/logging/LogRecord.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/logging/Logger.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qjava/util/zip/InflaterInputStream.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/zip/ZipConstants.class\\E"
+  }, {
+    "pattern":"\\Qjava/util/zip/ZipInputStream.class\\E"
+  }, {
+    "pattern":"\\Qjavax/annotation/processing/Filer.class\\E"
+  }, {
+    "pattern":"\\Qjavax/annotation/processing/Messager.class\\E"
+  }, {
+    "pattern":"\\Qjavax/annotation/processing/ProcessingEnvironment.class\\E"
+  }, {
+    "pattern":"\\Qjavax/annotation/processing/RoundEnvironment.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/AnnotatedConstruct.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/element/AnnotationMirror.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/element/AnnotationValue.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/element/AnnotationValueVisitor.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/element/Element.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/element/ElementVisitor.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/element/ExecutableElement.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/element/ModuleElement$Directive.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/element/ModuleElement$ExportsDirective.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/element/ModuleElement$OpensDirective.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/element/ModuleElement$ProvidesDirective.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/element/ModuleElement$RequiresDirective.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/element/ModuleElement$UsesDirective.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/element/ModuleElement.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/element/Name.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/element/PackageElement.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/element/Parameterizable.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/element/QualifiedNameable.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/element/RecordComponentElement.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/element/TypeElement.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/element/TypeParameterElement.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/element/VariableElement.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/type/ArrayType.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/type/DeclaredType.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/type/ErrorType.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/type/ExecutableType.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/type/NoType.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/type/NullType.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/type/PrimitiveType.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/type/ReferenceType.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/type/TypeMirror.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/type/TypeVariable.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/type/TypeVisitor.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/type/WildcardType.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/util/AbstractAnnotationValueVisitor6.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/util/AbstractElementVisitor6.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/util/AbstractTypeVisitor6.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/util/Elements.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/util/SimpleAnnotationValueVisitor6.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/util/SimpleAnnotationValueVisitor7.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/util/SimpleAnnotationValueVisitor8.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/util/SimpleElementVisitor6.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/util/SimpleElementVisitor7.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/util/SimpleElementVisitor8.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/util/SimpleTypeVisitor6.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/util/SimpleTypeVisitor7.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/util/SimpleTypeVisitor8.class\\E"
+  }, {
+    "pattern":"\\Qjavax/lang/model/util/Types.class\\E"
+  }, {
+    "pattern":"\\Qjavax/management/DynamicMBean.class\\E"
+  }, {
+    "pattern":"\\Qjavax/management/JMRuntimeException.class\\E"
+  }, {
+    "pattern":"\\Qjavax/management/MBeanRegistration.class\\E"
+  }, {
+    "pattern":"\\Qjavax/management/MBeanServer.class\\E"
+  }, {
+    "pattern":"\\Qjavax/management/MBeanServerConnection.class\\E"
+  }, {
+    "pattern":"\\Qjavax/management/NotificationBroadcaster.class\\E"
+  }, {
+    "pattern":"\\Qjavax/management/NotificationEmitter.class\\E"
+  }, {
+    "pattern":"\\Qjavax/management/NotificationFilter.class\\E"
+  }, {
+    "pattern":"\\Qjavax/management/NotificationListener.class\\E"
+  }, {
+    "pattern":"\\Qjavax/management/PersistentMBean.class\\E"
+  }, {
+    "pattern":"\\Qjavax/management/modelmbean/ModelMBean.class\\E"
+  }, {
+    "pattern":"\\Qjavax/management/modelmbean/ModelMBeanNotificationBroadcaster.class\\E"
+  }, {
+    "pattern":"\\Qjavax/management/modelmbean/RequiredModelMBean.class\\E"
+  }, {
+    "pattern":"\\Qjavax/naming/Context.class\\E"
+  }, {
+    "pattern":"\\Qjavax/naming/NameParser.class\\E"
+  }, {
+    "pattern":"\\Qjavax/naming/NamingEnumeration.class\\E"
+  }, {
+    "pattern":"\\Qjavax/naming/NamingException.class\\E"
+  }, {
+    "pattern":"\\Qjavax/naming/Reference.class\\E"
+  }, {
+    "pattern":"\\Qjavax/naming/Referenceable.class\\E"
+  }, {
+    "pattern":"\\Qjavax/naming/spi/InitialContextFactory.class\\E"
+  }, {
+    "pattern":"\\Qjavax/naming/spi/ObjectFactory.class\\E"
+  }, {
+    "pattern":"\\Qjavax/net/ssl/KeyManager.class\\E"
+  }, {
+    "pattern":"\\Qjavax/net/ssl/SSLEngine.class\\E"
+  }, {
+    "pattern":"\\Qjavax/net/ssl/SSLSession.class\\E"
+  }, {
+    "pattern":"\\Qjavax/net/ssl/SSLSessionContext.class\\E"
+  }, {
+    "pattern":"\\Qjavax/net/ssl/TrustManager.class\\E"
+  }, {
+    "pattern":"\\Qjavax/net/ssl/X509ExtendedKeyManager.class\\E"
+  }, {
+    "pattern":"\\Qjavax/net/ssl/X509KeyManager.class\\E"
+  }, {
+    "pattern":"\\Qjavax/net/ssl/X509TrustManager.class\\E"
+  }, {
+    "pattern":"\\Qjavax/security/auth/callback/Callback.class\\E"
+  }, {
+    "pattern":"\\Qjavax/security/auth/callback/CallbackHandler.class\\E"
+  }, {
+    "pattern":"\\Qjavax/security/auth/login/LoginException.class\\E"
+  }, {
+    "pattern":"\\Qjavax/security/auth/spi/LoginModule.class\\E"
+  }, {
+    "pattern":"\\Qjavax/sql/CommonDataSource.class\\E"
+  }, {
+    "pattern":"\\Qjavax/sql/ConnectionEventListener.class\\E"
+  }, {
+    "pattern":"\\Qjavax/sql/ConnectionPoolDataSource.class\\E"
+  }, {
+    "pattern":"\\Qjavax/sql/DataSource.class\\E"
+  }, {
+    "pattern":"\\Qjavax/sql/PooledConnection.class\\E"
+  }, {
+    "pattern":"\\Qjavax/tools/Diagnostic.class\\E"
+  }, {
+    "pattern":"\\Qjavax/tools/FileObject.class\\E"
+  }, {
+    "pattern":"\\Qjavax/tools/ForwardingFileObject.class\\E"
+  }, {
+    "pattern":"\\Qjavax/tools/ForwardingJavaFileObject.class\\E"
+  }, {
+    "pattern":"\\Qjavax/tools/JavaCompiler$CompilationTask.class\\E"
+  }, {
+    "pattern":"\\Qjavax/tools/JavaCompiler.class\\E"
+  }, {
+    "pattern":"\\Qjavax/tools/JavaFileManager$Location.class\\E"
+  }, {
+    "pattern":"\\Qjavax/tools/JavaFileManager.class\\E"
+  }, {
+    "pattern":"\\Qjavax/tools/JavaFileObject.class\\E"
+  }, {
+    "pattern":"\\Qjavax/tools/OptionChecker.class\\E"
+  }, {
+    "pattern":"\\Qjavax/tools/SimpleJavaFileObject.class\\E"
+  }, {
+    "pattern":"\\Qjavax/tools/StandardJavaFileManager.class\\E"
+  }, {
+    "pattern":"\\Qjavax/tools/Tool.class\\E"
+  }, {
+    "pattern":"\\Qjavax/transaction/xa/XAResource.class\\E"
+  }, {
+    "pattern":"\\Qjavax/xml/namespace/NamespaceContext.class\\E"
+  }, {
+    "pattern":"\\Qjavax/xml/stream/Location.class\\E"
+  }, {
+    "pattern":"\\Qjavax/xml/stream/XMLEventReader.class\\E"
+  }, {
+    "pattern":"\\Qjavax/xml/stream/XMLStreamConstants.class\\E"
+  }, {
+    "pattern":"\\Qjavax/xml/stream/XMLStreamReader.class\\E"
+  }, {
+    "pattern":"\\Qjavax/xml/stream/XMLStreamWriter.class\\E"
+  }, {
+    "pattern":"\\Qjavax/xml/transform/ErrorListener.class\\E"
+  }, {
+    "pattern":"\\Qjavax/xml/transform/Result.class\\E"
+  }, {
+    "pattern":"\\Qjavax/xml/transform/Source.class\\E"
+  }, {
+    "pattern":"\\Qjavax/xml/transform/sax/SAXResult.class\\E"
+  }, {
+    "pattern":"\\Qjavax/xml/transform/sax/SAXSource.class\\E"
+  }, {
+    "pattern":"\\Qjdk/internal/event/Event.class\\E"
+  }, {
+    "pattern":"\\Qjdk/jfr/Event.class\\E"
+  }, {
+    "pattern":"\\Qjndi.properties\\E"
+  }, {
+    "pattern":"\\Qkotlin/jvm/functions/Function1.class\\E"
+  }, {
+    "pattern":"\\Qkotlin/jvm/internal/FunctionReferenceImpl.class\\E"
+  }, {
+    "pattern":"\\Qkotlin/jvm/internal/Lambda.class\\E"
+  }, {
+    "pattern":"\\Qmanager/org/apache/jsp/WEB_002dINF/jsp/_401_jsp.class\\E"
+  }, {
+    "pattern":"\\Qorg/aopalliance/aop/Advice.class\\E"
+  }, {
+    "pattern":"\\Qorg/aopalliance/intercept/Interceptor.class\\E"
+  }, {
+    "pattern":"\\Qorg/aopalliance/intercept/Joinpoint.class\\E"
+  }, {
+    "pattern":"\\Qorg/aopalliance/intercept/MethodInterceptor.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/Contained.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/Lifecycle.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/authenticator/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/connector/Request$SpecialAttributeAdapter.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/connector/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/core/RestrictedFilters.properties\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/core/RestrictedListeners.properties\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/core/RestrictedServlets.properties\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/core/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/deploy/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/filters/CsrfPreventionFilter$NonceCache.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/filters/CsrfPreventionFilterBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/filters/FilterBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/filters/RequestFilter.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/filters/RestCsrfPreventionFilter$RestCsrfPreventionStrategy.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/ha/backend/Sender.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/ha/deploy/FileChangeListener.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/ha/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/ha/session/ClusterManagerBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/ha/session/ReplicatedSessionListener.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/loader/WebappClassLoaderBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/loader/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/manager/ManagerServlet.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/manager/host/HostManagerServlet.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/mapper/Mapper$MapElement.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/mapper/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/mbeans/SparseUserDatabaseMBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/mbeans/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/realm/MemoryRealm.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/realm/RealmBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/realm/X509UsernameRetriever.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/realm/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/servlets/DefaultServlet.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/session/PersistentManagerBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/session/StoreBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/session/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/startup/Authenticators.properties\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/startup/Catalina$ServerXml.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/startup/ContextConfig$ContextXml.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/startup/UserDatabase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/startup/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/storeconfig/IStoreFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/storeconfig/StoreAppender.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/storeconfig/StoreFactoryBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/storeconfig/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/ChannelListener.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/Heartbeat.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/MembershipListener.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/group/ChannelInterceptorBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/group/GroupChannelMBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/group/RpcCallback.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/group/RpcMessage.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/group/interceptors/DomainFilterInterceptorMBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/group/interceptors/EncryptInterceptorMBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/group/interceptors/FragmentationInterceptorMBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/group/interceptors/GzipInterceptorMBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/group/interceptors/MessageDispatchInterceptorMBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/group/interceptors/StaticMembershipInterceptorMBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/group/interceptors/TcpFailureDetectorMBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/group/interceptors/TcpPingInterceptorMBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/group/interceptors/ThroughputInterceptorMBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/membership/McastServiceMBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/membership/MembershipProviderBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/membership/MembershipServiceBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/membership/StaticMembershipServiceMBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/membership/cloud/CloudMembershipServiceMBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/membership/cloud/StreamProvider.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/tipis/AbstractReplicatedMap$MapOwner.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/tipis/ReplicatedMapEntry.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/transport/DataSender.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/transport/RxTaskPool$TaskCreator.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/transport/nio/NioReceiverMBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/tribes/transport/nio/PooledParallelSenderMBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/users/SparseUserDatabase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/users/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/util/LifecycleBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/util/LifecycleMBeanBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/util/ServerInfo.properties\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/valves/RequestFilterValve.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/valves/ValveBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/valves/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/valves/rewrite/RewriteMap.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/valves/rewrite/Substitution$SubstitutionElement.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/webresources/AbstractResource.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/webresources/AbstractResourceSet.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/webresources/StandardRoot.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/catalina/webresources/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/commons/logging/Log.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/commons/logging/LogFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/commons/pool2/PooledObjectFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/coyote/AbstractProcessorLight.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/coyote/ActionHook.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/coyote/Adapter.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/coyote/AsyncContextCallback.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/coyote/Processor.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/coyote/ProtocolHandler.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/coyote/http11/AbstractHttp11Protocol.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/coyote/http11/HttpOutputBuffer.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/coyote/http11/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/coyote/http2/AbstractStream.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/coyote/http2/HpackDecoder$HeaderEmitter.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/coyote/http2/HpackEncoder$HpackHeaderFunction.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/coyote/http2/HpackEncoder$TableEntry.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/coyote/http2/Http2Exception.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/coyote/http2/Http2Parser$Input.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/coyote/http2/Http2Parser$Output.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/coyote/http2/Http2Parser.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/coyote/http2/Http2UpgradeHandler$HeaderFrameBuffers.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/coyote/http2/Http2UpgradeHandler$PingManager.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/coyote/http2/Http2UpgradeHandler.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/coyote/http2/Stream$StreamInputBuffer.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/coyote/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/el/ExpressionFactoryImpl.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/el/lang/ELArithmetic.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/el/parser/BooleanNode.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/el/parser/ELParserConstants.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/el/parser/ELParserTreeConstants.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/el/parser/Node.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/el/parser/NodeVisitor.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/el/parser/SimpleNode.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/el/stream/Stream$OpIterator.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/el/util/JreCompat.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/jasper/Options.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/jasper/compiler/Compiler.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/jasper/compiler/ELNode$Visitor.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/jasper/compiler/ELNode.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/jasper/compiler/ELParser$Token.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/jasper/compiler/ErrorHandler.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/jasper/compiler/Node$ScriptingElement.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/jasper/compiler/Node$Visitor.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/jasper/compiler/Node.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/jasper/compiler/ServletWriter.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/jasper/compiler/TagConstants.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/jasper/compiler/tagplugin/TagPluginContext.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/jasper/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/jasper/runtime/HttpJspBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/jasper/runtime/JspSourceDependent.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/jasper/runtime/JspSourceImports.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/jasper/servlet/JasperInitializer.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/jasper/servlet/JspServlet.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/jasper/servlet/TldScanner.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/jasper/servlet/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/juli/FileHandler.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/juli/WebappProperties.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/juli/logging/Log.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/naming/factory/FactoryBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/naming/factory/ResourceLinkFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/naming/jndiprovider.properties\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/ContextBind.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/InstanceManager.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/InstrumentableClassLoader.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/dbcp/dbcp2/BasicDataSourceMXBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/dbcp/dbcp2/DataSourceMXBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/dbcp/dbcp2/DelegatingPreparedStatement.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/dbcp/dbcp2/DelegatingStatement.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/dbcp/dbcp2/PStmtKey$StatementBuilder.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/dbcp/dbcp2/PoolableConnectionMXBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/dbcp/dbcp2/datasources/PooledConnectionManager.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/dbcp/dbcp2/managed/TransactionContextListener.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/dbcp/dbcp2/managed/XAConnectionFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/dbcp/pool2/BaseObject.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/dbcp/pool2/KeyedPooledObjectFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/dbcp/pool2/ObjectPool.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/dbcp/pool2/PooledObjectFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/dbcp/pool2/SwallowedExceptionListener.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/dbcp/pool2/TrackedUse.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/dbcp/pool2/impl/DefaultPooledObjectInfoMBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/dbcp/pool2/impl/EvictionPolicy.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/dbcp/pool2/impl/GenericKeyedObjectPoolMXBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/dbcp/pool2/impl/GenericObjectPoolMXBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/bcel/classfile/ElementValue.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/buf/ByteChunk$ByteInputChannel.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/buf/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/codec/binary/BaseNCodec.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/collections/SynchronizedStack.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/compat/Jre9Compat.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/compat/JreCompat.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/descriptor/web/ErrorPage.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/descriptor/web/FilterDef.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/descriptor/web/FilterMap.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/descriptor/web/Injectable.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/descriptor/web/LoginConfig.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/descriptor/web/MultipartDef.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/descriptor/web/NamingResources.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/descriptor/web/ResourceBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/descriptor/web/SecurityCollection.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/descriptor/web/SecurityConstraint.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/descriptor/web/ServletDef.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/descriptor/web/SessionConfig.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/descriptor/web/XmlEncodingBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/descriptor/web/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/digester/AbstractObjectCreationFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/digester/CallMethodRule.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/digester/CallParamRule.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/digester/Digester$EntityResolverWrapper.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/digester/DocumentProperties$Charset.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/digester/ObjectCreateRule.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/digester/ObjectCreationFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/digester/Rule.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/digester/RuleSet.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/file/ConfigurationSource.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/http/fileupload/FileItemHeadersSupport.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/http/fileupload/FileUploadBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/http/fileupload/ThresholdingOutputStream.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/http/fileupload/impl/SizeException.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/http/fileupload/util/Closeable.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/http/fileupload/util/LimitedInputStream.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/json/JSONParserConstants.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/modeler/BaseModelMBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/modeler/FeatureInfo.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/modeler/Registry.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/modeler/RegistryMBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/modeler/mbeans-descriptors.dtd\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/modeler/modules/ModelerSource.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/net/AbstractEndpoint$Handler.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/net/ApplicationBufferHandler.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/net/Nio2Channel.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/net/NioChannel.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/net/SSLSupport.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/net/SendfileDataBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/net/SocketBufferHandler.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/net/SocketProcessorBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/net/SocketWrapperBase$CompletionCheck.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/net/SocketWrapperBase$OperationState.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/net/SocketWrapperBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/net/WriteBuffer$Sink.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/net/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/security/PermissionCheck.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/threads/ResizableExecutor.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/util/threads/ThreadPoolExecutor$RejectedExecutionHandler.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/websocket/Transformation.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/websocket/WsFrameBase$TerminalTransformation.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/websocket/WsRemoteEndpointBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/websocket/pojo/PojoEndpointBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/websocket/pojo/PojoEndpointClient.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/websocket/pojo/PojoEndpointServer.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tomcat/websocket/server/WsSci.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tools/ant/DefaultLogger.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tools/ant/Task.class\\E"
+  }, {
+    "pattern":"\\Qorg/apache/tools/ant/taskdefs/compilers/DefaultCompilerAdapter.class\\E"
+  }, {
+    "pattern":"\\Qorg/aspectj/bridge/IMessageHandler.class\\E"
+  }, {
+    "pattern":"\\Qorg/aspectj/lang/JoinPoint$StaticPart.class\\E"
+  }, {
+    "pattern":"\\Qorg/aspectj/lang/ProceedingJoinPoint.class\\E"
+  }, {
+    "pattern":"\\Qorg/aspectj/lang/reflect/MethodSignature.class\\E"
+  }, {
+    "pattern":"\\Qorg/aspectj/lang/reflect/SourceLocation.class\\E"
+  }, {
+    "pattern":"\\Qorg/aspectj/util/PartialOrder$PartialComparable.class\\E"
+  }, {
+    "pattern":"\\Qorg/aspectj/weaver/ast/ITestVisitor.class\\E"
+  }, {
+    "pattern":"\\Qorg/aspectj/weaver/tools/ContextBasedMatcher.class\\E"
+  }, {
+    "pattern":"\\Qorg/aspectj/weaver/tools/PointcutDesignatorHandler.class\\E"
+  }, {
+    "pattern":"\\Qorg/aspectj/weaver/tools/ShadowMatch.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/core/compiler/CategorizedProblem.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/core/compiler/IProblem.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ASTVisitor.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/AbstractAnnotationProcessorManager.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ICompilerRequestor.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/IErrorHandlingPolicy.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/apt/dispatch/IProcessorProvider.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/apt/model/AnnotationValueImpl.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/apt/model/IElementInfo.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/apt/model/ModuleElementImpl$PackageDirectiveImpl.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/apt/model/TypeElementImpl.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/apt/model/TypeMirrorImpl.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/apt/model/TypesImpl$MemberInTypeFinder.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/apt/model/VariableElementImpl.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/apt/util/ModuleLocationHandler$LocationWrapper.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/ASTNode.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/BinaryExpression.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/ConstructorDeclaration.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/Expression.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/ExpressionContext.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/IPolyExpression.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/Invocation.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/Literal.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/LocalDeclaration.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/MagicLiteral.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/MessageSend.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/MethodDeclaration.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/ModuleStatement.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/NameReference.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/NullAnnotationMatching$CheckMode.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/NullAnnotationMatching.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/NumberLiteral.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/OperatorExpression.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/OperatorIds.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/PackageVisibilityStatement.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/QualifiedThisReference.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/QualifiedTypeReference.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/Reference.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/ReturnStatement.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/SingleMemberAnnotation.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/SingleNameReference.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/SingleTypeReference.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/Statement.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/StringLiteral.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/SwitchStatement.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/ThisReference.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/ast/TypeReference.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/batch/ClasspathJrt.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/batch/ClasspathLocation.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/batch/FileSystem$Classpath.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/classfmt/ClassFileStruct.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/classfmt/ExternalAnnotationProvider$SingleMarkerAnnotation.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/classfmt/MethodInfo.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/classfmt/RecordComponentInfo.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/classfmt/TypeAnnotationWalker.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/codegen/Label.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/IBinaryAnnotation.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/IBinaryElementValuePair.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/IBinaryField.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/IBinaryMethod.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/IBinaryModule.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/IBinaryNestedType.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/IBinaryType.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/IBinaryTypeAnnotation.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/ICompilationUnit.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/IDependent.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/IGenericField.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/IGenericMethod.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/IGenericType.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/IModule$IModuleReference.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/IModule$IPackageExport.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/IModule$IService.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/IModule.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/IModuleAwareNameEnvironment$LookupStrategy.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/IModuleAwareNameEnvironment.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/IModulePathEntry.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/IMultiModuleEntry.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/INameEnvironment.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/IRecordComponent.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/ISourceModule.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/env/ITypeAnnotationWalker.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/flow/FieldInitsFakingFlowContext.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/flow/FlowContext.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/flow/FlowInfo.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/flow/SwitchFlowContext.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/flow/TryFlowContext.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/impl/Constant.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/impl/ITypeRequestor.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/impl/ReferenceContext.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/AnnotationHolder$MethodHolder.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/AnnotationHolder.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/Binding.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/ConstraintFormula.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/InferenceSubstitution.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/InvocationSite.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/LocalVariableBinding.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/MethodBinding.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/ModuleBinding.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/NestedTypeBinding.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/ParameterNonNullDefaultProvider.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/ParameterizedMethodBinding.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/ProblemReasons.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/ReductionResult.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/ReferenceBinding.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/Scope$Substitutor.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/Scope.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/SourceTypeBinding.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/Substitution.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/TypeBinding.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/TypeBindingVisitor.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/TypeConstants.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/TypeIds.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/TypeSystem.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/TypeVariableBinding.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/lookup/VariableBinding.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/parser/JavadocTagConstants.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/parser/ParserBasicInformation.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/parser/RecoveredElement.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/parser/RecoveredModuleStatement.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/parser/RecoveredPackageVisibilityStatement.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/parser/RecoveredStatement.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/parser/Scanner$VanguardParser.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/parser/Scanner.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/parser/TerminalTokens.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/problem/AbortType.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/problem/DefaultProblem.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/problem/ProblemSeverities.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/tool/ModuleLocationHandler$LocationWrapper.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/util/JRTUtil$JrtFileVisitor.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/util/SuffixConstants.class\\E"
+  }, {
+    "pattern":"\\Qorg/eclipse/jdt/internal/compiler/util/Util$Displayable.class\\E"
+  }, {
+    "pattern":"\\Qorg/graalvm/nativeimage/hosted/Feature.class\\E"
+  }, {
+    "pattern":"\\Qorg/hibernate/validator/spi/resourceloading/ResourceBundleLocator.class\\E"
+  }, {
+    "pattern":"\\Qorg/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"\\Qorg/reactivestreams/Subscriber.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/Advisor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/AfterAdvice.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/BeforeAdvice.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/ClassFilter.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/DynamicIntroductionAdvice.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/IntroductionAwareMethodMatcher.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/IntroductionInfo.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/IntroductionInterceptor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/MethodMatcher.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/Pointcut.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/PointcutAdvisor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/ProxyMethodInvocation.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/TargetClassAware.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/TargetSource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/aspectj/AbstractAspectJAdvice.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/aspectj/AspectInstanceFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/aspectj/AspectJPrecedenceInformation.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/aspectj/InstantiationModelAwarePointcutAdvisor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/aspectj/RuntimeTestWalker$InstanceOfResidueTestVisitor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/aspectj/RuntimeTestWalker$TestVisitorAdapter.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/aspectj/SingletonAspectInstanceFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/aspectj/annotation/AspectJAdvisorFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/framework/AbstractAdvisingBeanPostProcessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/framework/AbstractSingletonProxyFactoryBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/framework/Advised.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/framework/AdvisorChainFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/framework/AopInfrastructureBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/framework/AopProxy.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/framework/ProxyConfig.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/framework/ProxyProcessorSupport.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/framework/ReflectiveMethodInvocation.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/framework/adapter/AdvisorAdapter.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/framework/autoproxy/AbstractAutoProxyCreator.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/framework/autoproxy/AbstractBeanFactoryAwareAdvisingPostProcessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/framework/autoproxy/TargetSourceCreator.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/framework/autoproxy/target/AbstractBeanFactoryBasedTargetSourceCreator.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/interceptor/AbstractMonitoringInterceptor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/interceptor/AbstractTraceInterceptor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/interceptor/AsyncExecutionAspectSupport.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/interceptor/AsyncExecutionInterceptor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/interceptor/AsyncUncaughtExceptionHandler.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/support/AbstractBeanFactoryPointcutAdvisor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/support/AbstractGenericPointcutAdvisor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/support/AbstractPointcutAdvisor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/support/AbstractRegexpMethodPointcut.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/support/DefaultPointcutAdvisor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/support/DelegatingIntroductionInterceptor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/support/IntroductionInfoSupport.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/support/MethodMatchers$ClassFilterAwareUnionMethodMatcher.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/support/MethodMatchers$UnionMethodMatcher.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/support/StaticMethodMatcher.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/support/StaticMethodMatcherPointcut.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/target/AbstractBeanFactoryBasedTargetSource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/target/AbstractLazyCreationTargetSource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/target/AbstractPoolingTargetSource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/target/AbstractPrototypeBasedTargetSource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/target/LazyInitTargetSource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/target/PoolingConfig.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/target/ThreadLocalTargetSourceStats.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/target/dynamic/AbstractRefreshableTargetSource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/target/dynamic/BeanFactoryRefreshableTargetSource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aop/target/dynamic/Refreshable.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aot/generate/GeneratedFiles.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aot/generate/GenerationContext.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aot/generate/MethodReference.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aot/hint/AbstractTypeReference.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aot/hint/MemberHint.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aot/hint/TypeReference.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aot/hint/predicate/ReflectionHintsPredicates$ExecutableHintPredicate.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/aot/nativex/NativeConfigurationWriter.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/asm/Frame.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/AbstractPropertyAccessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/BeanInfoFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/BeanMetadataAttributeAccessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/BeanMetadataElement.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/BeansException.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/ConfigurablePropertyAccessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/FatalBeanException.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/InvalidPropertyException.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/Mergeable.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/PropertyAccessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/PropertyEditorRegistry.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/PropertyMatches.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/StandardBeanInfoFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/TypeConverter.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/TypeConverterSupport.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/TypeMismatchException.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/Aware.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/BeanClassLoaderAware.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/BeanDefinitionStoreException.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/BeanFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/BeanFactoryAware.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/BeanNameAware.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/DisposableBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/FactoryBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/HierarchicalBeanFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/InitializingBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/InjectionPoint.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/ListableBeanFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/NamedBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/ObjectFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/ObjectProvider.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/SmartInitializingSingleton.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/annotation/AnnotatedBeanDefinition.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/annotation/InitDestroyAnnotationBeanPostProcessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/annotation/InjectionMetadata$InjectedElement.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/annotation/QualifierAnnotationAutowireCandidateResolver.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/aot/AutowiredElementResolver.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/aot/BeanDefinitionPropertyValueCodeGenerator$CollectionDelegate.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/aot/BeanDefinitionPropertyValueCodeGenerator$Delegate.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/aot/BeanFactoryInitializationAotContribution.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/aot/BeanFactoryInitializationAotProcessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/aot/BeanFactoryInitializationCode.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/aot/BeanInstanceSupplier$ExecutableLookup.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/aot/BeanRegistrationAotProcessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/aot/BeanRegistrationCodeFragments.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/aot/BeanRegistrationCodeFragmentsDecorator.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/aot/BeanRegistrationsCode.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/config/AbstractFactoryBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/config/AutowireCapableBeanFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/config/BeanDefinition.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/config/BeanDefinitionCustomizer.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/config/BeanExpressionResolver.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/config/BeanFactoryPostProcessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/config/BeanPostProcessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/config/ConfigurableBeanFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/config/DependencyDescriptor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/config/DestructionAwareBeanPostProcessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/config/InstantiationAwareBeanPostProcessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/config/MethodInvokingBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/config/PlaceholderConfigurerSupport.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/config/PropertyPlaceholderConfigurer.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/config/PropertyResourceConfigurer.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/config/Scope.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/config/SingletonBeanRegistry.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/config/SmartInstantiationAwareBeanPostProcessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/config/YamlProcessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/groovy/GroovyDynamicElementReader.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/parsing/AbstractComponentDefinition.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/parsing/ComponentDefinition.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/parsing/CompositeComponentDefinition.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/parsing/DefaultsDefinition.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/parsing/ParseState$Entry.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/parsing/Problem.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/parsing/ProblemReporter.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/parsing/ReaderContext.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/parsing/ReaderEventListener.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/serviceloader/AbstractServiceLoaderBasedFactoryBean.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/support/AbstractBeanDefinition.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/support/AbstractBeanDefinitionReader.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/support/AutowireCandidateResolver.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/support/BeanDefinitionReader.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/support/BeanDefinitionRegistry.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/support/BeanDefinitionRegistryPostProcessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/support/BeanNameGenerator.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/support/CglibSubclassingInstantiationStrategy$CglibIdentitySupport.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/support/DefaultListableBeanFactory$BeanObjectProvider.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/support/DefaultListableBeanFactory$DependencyObjectProvider.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/support/DefaultSingletonBeanRegistry.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/support/FactoryBeanRegistrySupport.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/support/GenericBeanDefinition.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/support/GenericTypeAwareAutowireCandidateResolver.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/support/InstanceSupplier.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/support/InstantiationStrategy.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/support/MergedBeanDefinitionPostProcessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/support/MethodOverride.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/support/RootBeanDefinition.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/support/SimpleAutowireCandidateResolver.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/support/SimpleInstantiationStrategy.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/wiring/BeanWiringInfoResolver.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/xml/AbstractBeanDefinitionParser.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/xml/AbstractSimpleBeanDefinitionParser.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/xml/AbstractSingleBeanDefinitionParser.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/xml/BeanDefinitionDecorator.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/xml/BeanDefinitionParser.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/xml/NamespaceHandler.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/xml/NamespaceHandlerResolver.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/factory/xml/NamespaceHandlerSupport.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/beans/support/ArgumentConvertingMethodInvoker.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cache/Cache.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cache/CacheManager.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cache/annotation/AbstractCachingConfiguration.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cache/annotation/CacheAnnotationParser.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cache/interceptor/AbstractCacheInvoker.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cache/interceptor/AbstractCacheResolver.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cache/interceptor/BasicOperation.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cache/interceptor/CacheErrorHandler.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cache/interceptor/CacheOperation$Builder.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cache/interceptor/CacheResolver.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/core/AbstractClassGenerator.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/core/ClassEmitter.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/core/ClassGenerator.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/core/ClassInfo.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/core/ClassTransformer.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/core/CodeEmitter.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/core/DefaultGeneratorStrategy.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/core/EmitUtils$ParameterTyper.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/core/GeneratorStrategy.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/core/KeyFactoryCustomizer.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/core/LocalVariablesSorter.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/core/MethodInfo.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/core/NamingPolicy.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/core/ObjectSwitchCallback.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/core/Predicate.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/core/ProcessArrayCallback.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/core/ProcessSwitchCallback.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/core/Transformer.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/core/internal/Function.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/proxy/MixinEmitter.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/proxy/NoOp.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/proxy/Proxy.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/reflect/FastMember.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/transform/AbstractClassTransformer.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/transform/impl/InterceptFieldCallback.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/util/ParallelSorter$Comparer.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/cglib/util/SorterTemplate.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/ApplicationContext.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/ApplicationEventPublisher.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/ConfigurableApplicationContext.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/EmbeddedValueResolverAware.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/Lifecycle.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/MessageSource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/MessageSourceResolvable.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/Phased.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/ResourceLoaderAware.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/annotation/AnnotationBeanNameGenerator.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/annotation/Condition.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/annotation/DeferredImportSelector$Group.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/annotation/ImportAware.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/annotation/ImportBeanDefinitionRegistrar.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/annotation/ScopeMetadataResolver.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/aot/AbstractAotProcessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/event/AbstractApplicationEventMulticaster.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/event/ApplicationEventMulticaster.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/event/SmartApplicationListener.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/support/AbstractApplicationContext.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/support/AbstractRefreshableConfigApplicationContext.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/support/AbstractXmlApplicationContext.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/context/weaving/LoadTimeWeaverAware.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/ParameterNameDiscoverer.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/ParameterizedTypeReference.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/PrioritizedParameterNameDiscoverer.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/ResolvableType$VariableResolver.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/ResolvableType.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/SerializableTypeWrapper$TypeProvider.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/SortedProperties.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/annotation/AnnotationFilter.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/annotation/IntrospectionFailureLogger.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/annotation/MergedAnnotation.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/annotation/RepeatableContainers.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/codec/AbstractDecoder.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/codec/Decoder.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/codec/Encoder.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/convert/converter/GenericConverter.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/convert/support/GenericConversionService.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/env/ConfigurableEnvironment.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/env/ConfigurablePropertyResolver.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/env/EnumerablePropertySource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/env/Environment.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/env/PropertyResolver.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/env/PropertySource$StubPropertySource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/env/PropertySource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/env/PropertySources.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/io/AbstractResource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/io/ByteArrayResource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/io/ContextResource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/io/DefaultResourceLoader.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/io/InputStreamResource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/io/InputStreamSource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/io/Resource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/io/ResourceLoader.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/io/UrlResource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/io/WritableResource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/io/buffer/DataBuffer.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/io/buffer/DataBufferUtils$Matcher.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/io/buffer/DataBufferUtils$NestedMatcher.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/io/buffer/DefaultDataBuffer.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/io/buffer/PooledDataBuffer.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/io/buffer/TouchableDataBuffer.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/io/support/PropertySourceFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/io/support/ResourcePatternResolver.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/io/support/SpringFactoriesLoader$ArgumentResolver.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/io/support/SpringFactoriesLoader.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/log/LogMessage.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/metrics/StartupStep$Tags.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/metrics/StartupStep.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/serializer/Deserializer.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/serializer/Serializer.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/style/ToStringStyler.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/style/ValueStyler.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/task/AsyncTaskExecutor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/task/TaskExecutor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/type/ClassMetadata.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/type/StandardClassMetadata.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/type/classreading/MetadataReaderFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/type/classreading/SimpleMetadataReaderFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/core/type/filter/TypeFilter.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/ejb/config/AbstractJndiLocatingBeanDefinitionParser.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/AccessException.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/BeanResolver.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/ConstructorExecutor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/ConstructorResolver.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/EvaluationContext.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/EvaluationException.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/Expression.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/ExpressionException.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/ExpressionParser.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/MethodExecutor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/MethodResolver.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/OperatorOverloader.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/ParseException.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/ParserContext.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/PropertyAccessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/TypeComparator.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/TypeConverter.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/TypeLocator.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/TypedValue.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/common/TemplateAwareExpressionParser.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/spel/CompilablePropertyAccessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/spel/SpelNode.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/spel/ast/Literal.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/spel/ast/Operator.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/spel/ast/SpelNodeImpl.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/spel/ast/ValueRef.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/spel/support/ReflectiveMethodResolver.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/expression/spel/support/StandardEvaluationContext.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/format/Formatter.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/format/FormatterRegistrar.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/format/Printer.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/format/datetime/standard/DateTimeFormatterFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/instrument/classloading/LoadTimeWeaver.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/javapoet/TypeName.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/jmx/JmxException.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/jmx/access/MBeanClientInterceptor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/jmx/export/MBeanExportException.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/jmx/export/MBeanExportOperations.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/jmx/export/assembler/AbstractConfigurableMBeanInfoAssembler.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/jmx/export/assembler/AbstractMBeanInfoAssembler.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/jmx/export/assembler/AbstractReflectiveMBeanInfoAssembler.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/jmx/export/assembler/AutodetectCapableMBeanInfoAssembler.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/jmx/export/metadata/JmxAttributeSource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/jmx/export/naming/ObjectNamingStrategy.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/jndi/JndiLocatorSupport.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/jndi/JndiObjectLocator.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/objenesis/Objenesis.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/objenesis/instantiator/basic/ConstructorInstantiator.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/objenesis/instantiator/gcj/GCJInstantiatorBase.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/objenesis/strategy/InstantiatorStrategy.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/scheduling/Trigger.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/scheduling/TriggerContext.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/scheduling/annotation/AsyncConfigurer.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/scheduling/concurrent/ConcurrentTaskExecutor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/scheduling/concurrent/CustomizableThreadFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/scheduling/config/IntervalTask.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/scheduling/config/ScheduledTaskRegistrar.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/scheduling/config/Task.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/scheduling/config/TriggerTask.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/scheduling/support/CronField.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/scripting/ScriptFactory.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/scripting/ScriptSource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/ui/ConcurrentModel.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/ui/ExtendedModelMap.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/ui/Model.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/ui/ModelMap.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/ui/context/ThemeSource.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/util/ConcurrencyThrottleSupport.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/util/ConcurrentLruCache$DrainStatus.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/util/ConcurrentReferenceHashMap$Task.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/util/CustomizableThreadCreator.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/util/IdGenerator.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/util/InstanceFilter.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/util/MultiValueMap.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/util/MultiValueMapAdapter.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/util/PathMatcher.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/util/PropertiesPersister.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/util/UpdateMessageDigestInputStream.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/util/concurrent/ListenableFuture.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/util/concurrent/ListenableFutureCallback.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/util/concurrent/SuccessCallback.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/util/function/ThrowingBiFunction.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/util/function/ThrowingConsumer.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/util/function/ThrowingFunction.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/util/function/ThrowingSupplier.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/util/xml/AbstractXMLReader.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/validation/AbstractBindingResult.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/validation/AbstractErrors.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/validation/AbstractPropertyBindingResult.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/validation/BindingErrorProcessor.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/validation/DefaultMessageCodesResolver$Format.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/validation/Errors.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/validation/FieldError.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/validation/MessageCodesResolver.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/validation/SmartValidator.class\\E"
+  }, {
+    "pattern":"\\Qorg/springframework/validation/Validator.class\\E"
+  }, {
+    "pattern":"\\Qorg/xml/sax/Attributes.class\\E"
+  }, {
+    "pattern":"\\Qorg/xml/sax/ContentHandler.class\\E"
+  }, {
+    "pattern":"\\Qorg/xml/sax/DTDHandler.class\\E"
+  }, {
+    "pattern":"\\Qorg/xml/sax/EntityResolver.class\\E"
+  }, {
+    "pattern":"\\Qorg/xml/sax/ErrorHandler.class\\E"
+  }, {
+    "pattern":"\\Qorg/xml/sax/Locator.class\\E"
+  }, {
+    "pattern":"\\Qorg/xml/sax/SAXException.class\\E"
+  }, {
+    "pattern":"\\Qorg/xml/sax/SAXParseException.class\\E"
+  }, {
+    "pattern":"\\Qorg/xml/sax/XMLReader.class\\E"
+  }, {
+    "pattern":"\\Qorg/xml/sax/ext/DeclHandler.class\\E"
+  }, {
+    "pattern":"\\Qorg/xml/sax/ext/DefaultHandler2.class\\E"
+  }, {
+    "pattern":"\\Qorg/xml/sax/ext/EntityResolver2.class\\E"
+  }, {
+    "pattern":"\\Qorg/xml/sax/ext/LexicalHandler.class\\E"
+  }, {
+    "pattern":"\\Qorg/xml/sax/ext/Locator2.class\\E"
+  }, {
+    "pattern":"\\Qorg/xml/sax/helpers/AttributesImpl.class\\E"
+  }, {
+    "pattern":"\\Qorg/xml/sax/helpers/DefaultHandler.class\\E"
+  }, {
+    "pattern":"\\Qorg/yaml/snakeyaml/constructor/Constructor.class\\E"
+  }, {
+    "pattern":"\\Qreactor/blockhound/integration/BlockHoundIntegration.class\\E"
+  }, {
+    "pattern":"\\Qreactor/core/publisher/BaseSubscriber.class\\E"
+  }, {
+    "pattern":"\\Qspring.properties\\E"
+  }, {
+    "pattern":"\\QspringTomcat/org/apache/jsp/index_jsp.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/io/BufferedReader.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/io/ByteArrayOutputStream.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/io/CharConversionException.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/io/Closeable.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/io/DataInput.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/io/Externalizable.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/io/FilenameFilter.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/io/FilterInputStream.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/io/FilterOutputStream.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/io/Flushable.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/io/IOException.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/io/InputStream.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/io/ObjectInput.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/io/ObjectInputStream.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/io/ObjectStreamConstants.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/io/OutputStream.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/io/PrintStream.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/io/PrintWriter.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/io/Reader.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/io/Serializable.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/io/Writer.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/Appendable.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/AutoCloseable.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/CharSequence.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/ClassLoader.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/Cloneable.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/Comparable.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/Enum.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/Error.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/Exception.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/IllegalArgumentException.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/IllegalStateException.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/IndexOutOfBoundsException.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/InheritableThreadLocal.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/Iterable.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/LinkageError.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/Object.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/Readable.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/Record.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/Runnable.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/RuntimeException.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/SecurityManager.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/String.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/Thread.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/ThreadLocal.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/Throwable.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/UnsatisfiedLinkError.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/constant/Constable.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/ref/Reference.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/ref/SoftReference.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/ref/WeakReference.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/reflect/AnnotatedElement.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/reflect/InvocationHandler.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/reflect/ParameterizedType.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/lang/reflect/Type.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/net/JarURLConnection.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/net/URLClassLoader.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/net/URLConnection.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/net/URLStreamHandler.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/net/URLStreamHandlerFactory.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/nio/channels/AsynchronousByteChannel.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/nio/channels/AsynchronousChannel.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/nio/channels/ByteChannel.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/nio/channels/Channel.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/nio/channels/CompletionHandler.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/nio/channels/GatheringByteChannel.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/nio/channels/ReadableByteChannel.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/nio/channels/ScatteringByteChannel.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/nio/channels/WritableByteChannel.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/nio/charset/Charset.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/nio/charset/CharsetDecoder.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/nio/charset/CharsetEncoder.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/nio/file/FileVisitor.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/nio/file/SimpleFileVisitor.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/security/BasicPermission.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/security/GeneralSecurityException.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/security/Guard.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/security/Permission.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/security/Principal.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/security/PrivilegedAction.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/security/PrivilegedExceptionAction.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/security/SecureClassLoader.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/security/cert/Certificate.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/security/cert/X509Certificate.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/security/cert/X509Extension.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/AbstractCollection.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/AbstractList.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/AbstractMap.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/AbstractQueue.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/AbstractSet.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/ArrayDeque.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/ArrayList.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/Collection.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/Comparator.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/Deque.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/Dictionary.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/Enumeration.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/EventListener.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/EventObject.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/HashMap.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/HashSet.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/Hashtable.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/Iterator.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/LinkedHashMap.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/LinkedHashSet.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/List.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/Map$Entry.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/Map.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/Properties.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/Queue.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/RandomAccess.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/ResourceBundle$Control.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/ResourceBundle.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/SequencedCollection.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/SequencedMap.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/SequencedSet.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/Set.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/Spliterator.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/TimerTask.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/AbstractExecutorService.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/BlockingQueue.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/Callable.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/CompletableFuture.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/CompletionStage.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/ConcurrentHashMap.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/ConcurrentMap.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/CopyOnWriteArrayList.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/Delayed.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/Executor.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/ExecutorService.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/ForkJoinPool$ForkJoinWorkerThreadFactory.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/ForkJoinWorkerThread.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/Future.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/FutureTask.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/LinkedBlockingQueue.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/RejectedExecutionException.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/RejectedExecutionHandler.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/RunnableFuture.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/ScheduledExecutorService.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/ScheduledFuture.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/ThreadFactory.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/ThreadPoolExecutor.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/atomic/AtomicReference.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/locks/AbstractOwnableSynchronizer.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/locks/AbstractQueuedSynchronizer.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/locks/Lock.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/locks/ReentrantLock.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/concurrent/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/function/BiFunction.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/function/Consumer.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/function/Function.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/function/Predicate.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/function/Supplier.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/jar/JarInputStream.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/mbeans-descriptors.xml\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/zip/InflaterInputStream.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/zip/ZipConstants.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjava/util/zip/ZipInputStream.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjavax/net/ssl/KeyManager.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjavax/net/ssl/SSLEngine.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjavax/net/ssl/SSLSession.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjavax/net/ssl/SSLSessionContext.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjavax/net/ssl/TrustManager.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjavax/net/ssl/X509ExtendedKeyManager.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjavax/net/ssl/X509KeyManager.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjavax/net/ssl/X509TrustManager.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjavax/security/auth/callback/Callback.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjavax/security/auth/callback/CallbackHandler.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjavax/security/auth/login/LoginException.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjavax/security/auth/spi/LoginModule.class\\E"
+  }, {
+    "pattern":"java.base:\\Qjdk/internal/event/Event.class\\E"
+  }, {
+    "pattern":"java.base:\\Qsun/net/www/content-types.properties\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/annotation/processing/Filer.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/annotation/processing/Messager.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/annotation/processing/ProcessingEnvironment.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/annotation/processing/RoundEnvironment.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/AnnotatedConstruct.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/element/AnnotationMirror.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/element/AnnotationValue.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/element/AnnotationValueVisitor.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/element/Element.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/element/ElementVisitor.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/element/ExecutableElement.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/element/ModuleElement$Directive.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/element/ModuleElement$ExportsDirective.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/element/ModuleElement$OpensDirective.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/element/ModuleElement$ProvidesDirective.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/element/ModuleElement$RequiresDirective.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/element/ModuleElement$UsesDirective.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/element/ModuleElement.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/element/Name.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/element/PackageElement.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/element/Parameterizable.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/element/QualifiedNameable.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/element/RecordComponentElement.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/element/TypeElement.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/element/TypeParameterElement.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/element/VariableElement.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/type/ArrayType.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/type/DeclaredType.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/type/ErrorType.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/type/ExecutableType.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/type/NoType.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/type/NullType.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/type/PrimitiveType.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/type/ReferenceType.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/type/TypeMirror.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/type/TypeVariable.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/type/TypeVisitor.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/type/WildcardType.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/util/AbstractAnnotationValueVisitor6.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/util/AbstractElementVisitor6.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/util/AbstractTypeVisitor6.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/util/Elements.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/util/SimpleAnnotationValueVisitor6.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/util/SimpleAnnotationValueVisitor7.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/util/SimpleAnnotationValueVisitor8.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/util/SimpleElementVisitor6.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/util/SimpleElementVisitor7.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/util/SimpleElementVisitor8.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/util/SimpleTypeVisitor6.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/util/SimpleTypeVisitor7.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/util/SimpleTypeVisitor8.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/lang/model/util/Types.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/tools/Diagnostic.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/tools/FileObject.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/tools/ForwardingFileObject.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/tools/ForwardingJavaFileObject.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/tools/JavaCompiler$CompilationTask.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/tools/JavaCompiler.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/tools/JavaFileManager$Location.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/tools/JavaFileManager.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/tools/JavaFileObject.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/tools/OptionChecker.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/tools/SimpleJavaFileObject.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/tools/StandardJavaFileManager.class\\E"
+  }, {
+    "pattern":"java.compiler:\\Qjavax/tools/Tool.class\\E"
+  }, {
+    "pattern":"java.desktop:\\Qjava/beans/BeanInfo.class\\E"
+  }, {
+    "pattern":"java.desktop:\\Qjava/beans/FeatureDescriptor.class\\E"
+  }, {
+    "pattern":"java.desktop:\\Qjava/beans/IndexedPropertyDescriptor.class\\E"
+  }, {
+    "pattern":"java.desktop:\\Qjava/beans/PropertyChangeListener.class\\E"
+  }, {
+    "pattern":"java.desktop:\\Qjava/beans/PropertyDescriptor.class\\E"
+  }, {
+    "pattern":"java.desktop:\\Qjava/beans/PropertyEditor.class\\E"
+  }, {
+    "pattern":"java.desktop:\\Qjava/beans/PropertyEditorSupport.class\\E"
+  }, {
+    "pattern":"java.desktop:\\Qjava/beans/SimpleBeanInfo.class\\E"
+  }, {
+    "pattern":"java.instrument:\\Qjava/lang/instrument/ClassFileTransformer.class\\E"
+  }, {
+    "pattern":"java.logging:\\Qjava/util/logging/Formatter.class\\E"
+  }, {
+    "pattern":"java.logging:\\Qjava/util/logging/Handler.class\\E"
+  }, {
+    "pattern":"java.logging:\\Qjava/util/logging/LogManager.class\\E"
+  }, {
+    "pattern":"java.logging:\\Qjava/util/logging/LogRecord.class\\E"
+  }, {
+    "pattern":"java.logging:\\Qjava/util/logging/Logger.class\\E"
+  }, {
+    "pattern":"java.management:\\Qjavax/management/DynamicMBean.class\\E"
+  }, {
+    "pattern":"java.management:\\Qjavax/management/JMRuntimeException.class\\E"
+  }, {
+    "pattern":"java.management:\\Qjavax/management/MBeanRegistration.class\\E"
+  }, {
+    "pattern":"java.management:\\Qjavax/management/MBeanServer.class\\E"
+  }, {
+    "pattern":"java.management:\\Qjavax/management/MBeanServerConnection.class\\E"
+  }, {
+    "pattern":"java.management:\\Qjavax/management/NotificationBroadcaster.class\\E"
+  }, {
+    "pattern":"java.management:\\Qjavax/management/NotificationEmitter.class\\E"
+  }, {
+    "pattern":"java.management:\\Qjavax/management/NotificationFilter.class\\E"
+  }, {
+    "pattern":"java.management:\\Qjavax/management/NotificationListener.class\\E"
+  }, {
+    "pattern":"java.management:\\Qjavax/management/PersistentMBean.class\\E"
+  }, {
+    "pattern":"java.management:\\Qjavax/management/modelmbean/ModelMBean.class\\E"
+  }, {
+    "pattern":"java.management:\\Qjavax/management/modelmbean/ModelMBeanNotificationBroadcaster.class\\E"
+  }, {
+    "pattern":"java.management:\\Qjavax/management/modelmbean/RequiredModelMBean.class\\E"
+  }, {
+    "pattern":"java.naming:\\Qjavax/naming/Context.class\\E"
+  }, {
+    "pattern":"java.naming:\\Qjavax/naming/NameParser.class\\E"
+  }, {
+    "pattern":"java.naming:\\Qjavax/naming/NamingEnumeration.class\\E"
+  }, {
+    "pattern":"java.naming:\\Qjavax/naming/NamingException.class\\E"
+  }, {
+    "pattern":"java.naming:\\Qjavax/naming/Reference.class\\E"
+  }, {
+    "pattern":"java.naming:\\Qjavax/naming/Referenceable.class\\E"
+  }, {
+    "pattern":"java.naming:\\Qjavax/naming/spi/InitialContextFactory.class\\E"
+  }, {
+    "pattern":"java.naming:\\Qjavax/naming/spi/ObjectFactory.class\\E"
+  }, {
+    "pattern":"java.sql:\\Qjava/sql/CallableStatement.class\\E"
+  }, {
+    "pattern":"java.sql:\\Qjava/sql/Connection.class\\E"
+  }, {
+    "pattern":"java.sql:\\Qjava/sql/DatabaseMetaData.class\\E"
+  }, {
+    "pattern":"java.sql:\\Qjava/sql/Driver.class\\E"
+  }, {
+    "pattern":"java.sql:\\Qjava/sql/PreparedStatement.class\\E"
+  }, {
+    "pattern":"java.sql:\\Qjava/sql/ResultSet.class\\E"
+  }, {
+    "pattern":"java.sql:\\Qjava/sql/SQLException.class\\E"
+  }, {
+    "pattern":"java.sql:\\Qjava/sql/Statement.class\\E"
+  }, {
+    "pattern":"java.sql:\\Qjava/sql/Wrapper.class\\E"
+  }, {
+    "pattern":"java.sql:\\Qjavax/sql/CommonDataSource.class\\E"
+  }, {
+    "pattern":"java.sql:\\Qjavax/sql/ConnectionEventListener.class\\E"
+  }, {
+    "pattern":"java.sql:\\Qjavax/sql/ConnectionPoolDataSource.class\\E"
+  }, {
+    "pattern":"java.sql:\\Qjavax/sql/DataSource.class\\E"
+  }, {
+    "pattern":"java.sql:\\Qjavax/sql/PooledConnection.class\\E"
+  }, {
+    "pattern":"java.transaction.xa:\\Qjavax/transaction/xa/XAResource.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qcom/sun/org/apache/xerces/internal/jaxp/SAXParserFactoryImpl.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qjavax/xml/namespace/NamespaceContext.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qjavax/xml/stream/Location.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qjavax/xml/stream/XMLEventReader.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qjavax/xml/stream/XMLStreamConstants.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qjavax/xml/stream/XMLStreamReader.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qjavax/xml/stream/XMLStreamWriter.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qjavax/xml/transform/ErrorListener.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qjavax/xml/transform/Result.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qjavax/xml/transform/Source.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qjavax/xml/transform/sax/SAXResult.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qjavax/xml/transform/sax/SAXSource.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qorg/xml/sax/Attributes.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qorg/xml/sax/ContentHandler.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qorg/xml/sax/DTDHandler.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qorg/xml/sax/EntityResolver.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qorg/xml/sax/ErrorHandler.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qorg/xml/sax/Locator.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qorg/xml/sax/SAXException.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qorg/xml/sax/SAXParseException.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qorg/xml/sax/XMLReader.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qorg/xml/sax/ext/DeclHandler.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qorg/xml/sax/ext/DefaultHandler2.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qorg/xml/sax/ext/EntityResolver2.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qorg/xml/sax/ext/LexicalHandler.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qorg/xml/sax/ext/Locator2.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qorg/xml/sax/helpers/AttributesImpl.class\\E"
+  }, {
+    "pattern":"java.xml:\\Qorg/xml/sax/helpers/DefaultHandler.class\\E"
+  }, {
+    "pattern":"jdk.jfr:\\Qjdk/jfr/Event.class\\E"
+  }, {
+    "pattern":"jdk.jfr:\\Qjdk/jfr/internal/query/view.ini\\E"
+  }, {
+    "pattern":"org.graalvm.nativeimage:\\Qorg/graalvm/nativeimage/hosted/Feature.class\\E"
+  }]},
+  "bundles":[{
+    "name":"jakarta.servlet.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"jakarta.servlet.http.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.catalina.authenticator.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.catalina.authenticator.jaspic.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.catalina.connector.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.catalina.core.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.catalina.deploy.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.catalina.filters.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.catalina.loader.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.catalina.manager.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.catalina.mapper.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.catalina.mbeans.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.catalina.realm.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.catalina.security.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.catalina.servlets.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.catalina.session.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.catalina.startup.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.catalina.users.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.catalina.util.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.catalina.valves.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.catalina.webresources.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.coyote.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.coyote.http11.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.coyote.http11.filters.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.jasper.resources.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.naming.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.naming.factory.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.tomcat.util.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.tomcat.util.buf.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.tomcat.util.codec.binary.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.tomcat.util.compat.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.tomcat.util.descriptor.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.tomcat.util.descriptor.web.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.tomcat.util.digester.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.tomcat.util.http.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.tomcat.util.http.parser.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.tomcat.util.modeler.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.tomcat.util.net.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.tomcat.util.scan.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.tomcat.util.threads.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.tomcat.websocket.LocalStrings",
+    "locales":[""]
+  }, {
+    "name":"org.apache.tomcat.websocket.server.LocalStrings",
+    "locales":[""]
+  }]
+}

@@ -222,7 +222,7 @@ native-image --no-server\
         -H:JNIConfigurationFiles=$TOMCAT_STUFFED/tomcat-jni.json\
         -jar $TOMCAT_STUFFED/target/tomcat-stuffed-1.0.jar
 ```
-targetディレクトリ配下にネイティブ実行ファイル「tomcat-stuffed-1.0」が生成されていることを確認してください。  
+stuffedディレクトリ配下にネイティブ実行ファイル「tomcat-stuffed-1.0」が生成されていることを確認してください。  
 native imageを起動します。
 ```
 ./tomcat-stuffed-1.0 -Dcatalina.base=. -Djava.util.logging.config.file=conf/logging.properties --catalina -useGeneratedCode
