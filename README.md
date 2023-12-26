@@ -96,7 +96,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 export MVN_HOME=/opt/apache-maven-3.6.3
 export PATH=$MVN_HOME/bin:$PATH
 
-export ANT_HOM=/opt/apache-ant-1.10.14
+export ANT_HOME=/opt/apache-ant-1.10.14
 export PATH=$ANT_HOME/bin:$PATH
 
 export TOMCAT_STUFFED=/home/opc/project/tomcat-native-jp/stuffed
