@@ -165,6 +165,8 @@ mavenによるビルドが完了後、Antで再度ビルドします。webapp.na
 
 ```
 ant -Dwebapp.name=springTomcat -f webapp-jspc.ant.xml
+ant -Dwebapp.name=ROOT -f webapp-jspc.ant.xml
+ant -Dwebapp.name=manager -f webapp-jspc.ant.xml
 ```
 
 再度mavenでビルドをします。
