@@ -17,6 +17,8 @@
 
 > **NOTE:** 上記ソフトウェアはすべてインストール済みという前提でデモ手順を記載します。Linux上インストールした各ソフトウェアの環境変数を設定する~/.bashrcの例を以下示します。
 ```
+export CATALINA_HOME=/opt/apache-tomcat-10.0.27
+
 export JAVA_HOME=/usr/lib64/graalvm/graalvm-java21
 export PATH=$JAVA_HOME/bin:$PATH
 
@@ -90,35 +92,24 @@ cp -r tomcat/modules/stuffed ../tomcat-native-jp/
 > **NOTE:** 参考のため、全タスク完了後のstuffedフォルダーをcompleteフォルダーに格納しております。  
 > **NOTE:** stuffedの格納場所を環境変数として定義しておきます。以下は~/.bashrcにおける定義例です：
 ```
-export JAVA_HOME=/usr/lib64/graalvm/graalvm-java21
-export PATH=$JAVA_HOME/bin:$PATH
-
-export MVN_HOME=/opt/apache-maven-3.6.3
-export PATH=$MVN_HOME/bin:$PATH
-
-export ANT_HOME=/opt/apache-ant-1.10.14
-export PATH=$ANT_HOME/bin:$PATH
-
 export TOMCAT_STUFFED=/home/opc/project/tomcat-native-jp/stuffed
 
 ```
 
-
-
 Tomcatサーバにデプロイ済みのWebアプリケーション「springTomcat」フォルダーをstuffed配下のwebappsディレクトリにコピーします。 
 ```
-cp -r $TOMCAT_HOME/webapps/springTomcat $TOMCAT_STUFFED/webapps/
+cp -r $CATALINA_HOME/webapps/springTomcat $TOMCAT_STUFFED/webapps/
 ```
 spring-framework-tomcat-sample/src/main/java配下のJavaソースをstuffed/webappsの配下にコピーします。  
 
 ```
 cd spring-framework-tomcat-sample
-cp -r src/main/java/* $TOMCAT_STUFFED/webapps/springTomcat/WEB-INF/classes/
+cp -r src/main/java/* $CATALINA_HOME/webapps/springTomcat/WEB-INF/classes/
 ```
 
 Tomcatサーバのconfディレクトリ配下のすべてをstuffed/confディレクトリにコピーします。  
 ```
-cp -r $TOMCAT_HOME/conf/* ../stuffed/conf/
+cp -r $CATALINA_HOME/conf/* $TOMCAT_STUFFED/conf/
 ```
 
 ## 3. パッケージングとネイティブビルド
