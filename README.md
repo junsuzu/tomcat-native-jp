@@ -100,6 +100,13 @@ Tomcatサーバにデプロイ済みのWebアプリケーション「springTomca
 ```
 cp -r $CATALINA_HOME/webapps/springTomcat $TOMCAT_STUFFED/webapps/
 ```
+同様にTomcatサーバのROOTとmanagerもコピーします。
+```
+cp -r $CATALINA_HOME/webapps/ROOT $TOMCAT_STUFFED/webapps/
+cp -r $CATALINA_HOME/webapps/manager $TOMCAT_STUFFED/webapps/
+```
+
+
 spring-framework-tomcat-sample/src/main/java配下のJavaソースをstuffed/webappsの配下にコピーします。  
 
 ```
