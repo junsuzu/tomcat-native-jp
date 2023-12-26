@@ -111,7 +111,7 @@ spring-framework-tomcat-sample/src/main/java配下のJavaソースをstuffed/web
 
 ```
 cd spring-framework-tomcat-sample
-cp -r src/main/java/* $CATALINA_HOME/webapps/springTomcat/WEB-INF/classes/
+cp -r src/main/java/* $TOMCAT_STUFFED/webapps/springTomcat/WEB-INF/classes/
 ```
 
 Tomcatサーバのconfディレクトリ配下のすべてをstuffed/confディレクトリにコピーします。  
