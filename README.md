@@ -18,6 +18,7 @@
 > **NOTE:** 上記ソフトウェアはすべてインストール済みという前提でデモ手順を記載します。Linux上インストールした各ソフトウェアの環境変数を設定する~/.bashrcの例を以下示します。
 ```
 export CATALINA_HOME=/opt/apache-tomcat-10.0.27
+export PATH=$CATALINA_HOME/bin:$PATH
 
 export JAVA_HOME=/usr/lib64/graalvm/graalvm-java21
 export PATH=$JAVA_HOME/bin:$PATH
