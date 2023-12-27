@@ -37,6 +37,8 @@ export PATH=$ANT_HOME/bin:$PATH
    
 * **[3. パッケージングとネイティブビルド](#3-パッケージングとネイティブビルド)**
 
+* **[4. DockerコンテナでTomcatのnative imageを動かす](#4-DockerコンテナでTomcatのnative-imageを動かす)**
+
 ## 1. サンプルアプリケーションをTomcatに導入  
 Spring Frameworkを使用したWebアプリケーションを作成して、warファイルとしてTomcatにデプロイし、正常稼働を確認します。のちにこのアプリケーションをnative image化します。
 
@@ -231,4 +233,58 @@ native imageを起動します。
 ```
 [opc@jms-instance-2 /]$ curl http://localhost:8080/springTomcat/greeting
 Hello Spring Framework World
+```
+
+## 4. DockerコンテナでTomcatのnative imageを動かす
+
+stuffedディレクトリ配下のDockerfileGraalを修正し、ベースとなるOSイメージをbusy:boxからoraclelinux:8-slimに変更します。
+```
+# FROM busybox:glibc
+FROM oraclelinux:8-slim
+```
+
+Dockerイメージをビルドします。
+```
+docker build -t apache/tomcat-stuffed-native:1.0 -f ./DockerfileGraal .
+```
+
+Dockerコンテナを起動して、Tomcatサーバおよびspringframeworkのサンプルが正常稼働することを確認してください。
+```
+docker run --name tomcat-native -p 8080:8080 apache/tomcat-stuffed-native:1.0
+```
+```
+[opc@jms-instance-2 tomcat-native-jp]$ curl http://localhost:8080/springTomcat/greeting
+Hello Spring Framework World
+```
+
+Tomcatサーバのnative imageをコンテナで稼働する場合のアプリケーションの実行時間と従来のTomcatサーバ稼働時の実行時間を比較してみてください。このデモの環境では、native image方式は従来より2倍の速さで実行していることを確認できました。
+
+■native image方式
+```
+[opc@jms-instance-2 tomcat-native-jp]$ docker start tomcat-native
+tomcat-native
+[opc@jms-instance-2 tomcat-native-jp]$ time curl http://localhost:8080/springTomcat/greeting
+Hello Spring Framework World
+
+real    0m0.012s
+user    0m0.003s
+sys     0m0.005s
+```
+
+■従来のTomcatサーバ方式
+```
+[opc@jms-instance-2 tomcat-native-jp]$ startup.sh
+Using CATALINA_BASE:   /opt/apache-tomcat-10.0.27
+Using CATALINA_HOME:   /opt/apache-tomcat-10.0.27
+Using CATALINA_TMPDIR: /opt/apache-tomcat-10.0.27/temp
+Using JRE_HOME:        /usr/lib64/graalvm/graalvm-java21
+Using CLASSPATH:       /opt/apache-tomcat-10.0.27/bin/bootstrap.jar:/opt/apache-tomcat-10.0.27/bin/tomcat-juli.jar
+Using CATALINA_OPTS:   
+Tomcat started.
+[opc@jms-instance-2 tomcat-native-jp]$ time curl http://localhost:8080/springTomcat/greeting
+Hello Spring Framework World
+
+real    0m0.273s
+user    0m0.004s
+sys     0m0.004s
 ```
