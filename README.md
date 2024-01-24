@@ -44,10 +44,18 @@ export PATH=$ANT_HOME/bin:$PATH
 Spring Frameworkを使用したWebアプリケーションを作成して、warファイルとしてTomcatにデプロイし、正常稼働を確認します。のちにこのアプリケーションをnative image化します。
 
 ```
-$ git clone https://github.com/junsuzu/tomcat-native-jp
-$ cd spring-framework-tomcat-sample
-$ mvn clean package
-$ cd target
+git clone https://github.com/junsuzu/tomcat-native-jp
+```
+```
+cd tomcat-native-jp
+```
+
+```
+cd spring-framework-tomcat-sample
+```
+
+```
+mvn clean package
 ```
 
 targetディレクトリ配下にspringTomcat.warファイルがビルドされることを確認します。
@@ -89,7 +97,7 @@ git clone https://github.com/apache/tomcat.git
 ```
 本デモではstuffedフォルダーをtomcat-native-jp配下にコピーし、stuffed配下で後続タスクを行います。
 ```
-cp -r tomcat/modules/stuffed ../tomcat-native-jp/
+cp -r ./tomcat/modules/stuffed ./tomcat-native-jp/
 
 ```
 > **NOTE:** 参考のため、全タスク完了後のstuffedフォルダーをcompleteフォルダーに格納しております。  
