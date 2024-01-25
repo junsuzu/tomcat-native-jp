@@ -93,18 +93,15 @@ Hello Spring Framework World
 Tomcatの公式ドキュメントhttps://tomcat.apache.org/tomcat-11.0-doc/graal.html に従い、Tomcat Stuffed moduleをダウンロードしてください。
 ```
 git clone https://github.com/apache/tomcat.git
-
 ```
 本デモではstuffedフォルダーをtomcat-native-jp配下にコピーし、stuffed配下で後続タスクを行います。
 ```
 cp -r ./tomcat/modules/stuffed ./tomcat-native-jp/
-
 ```
 > **NOTE:** 参考のため、全タスク完了後のstuffedフォルダーをcompleteフォルダーに格納しております。  
 > **NOTE:** stuffedの格納場所を環境変数として定義しておきます。以下は~/.bashrcにおける定義例です：
 ```
 export TOMCAT_STUFFED=/home/opc/project/tomcat-native-jp/stuffed
-
 ```
 
 Tomcatサーバにデプロイ済みのWebアプリケーション「springTomcat」フォルダーをstuffed配下のwebappsディレクトリにコピーします。 
@@ -266,7 +263,7 @@ docker run --name tomcat-native -p 8080:8080 apache/tomcat-stuffed-native:1.0
 Hello Spring Framework World
 ```
 
-Tomcatサーバのnative imageをコンテナで稼働する場合のアプリケーションの実行時間と従来のTomcatサーバ稼働時の実行時間を比較してみてください。このデモの環境では、native image方式は従来より2倍の速さで実行していることを確認できました。
+Tomcatサーバのnative imageをコンテナで稼働する場合のアプリケーションの実行時間と従来のTomcatサーバ稼働時の実行時間を比較してみてください。このデモの環境では、native image方式は従来より20倍の速さで実行していることを確認できました。
 
 ■native image方式
 ```
